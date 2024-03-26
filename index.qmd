@@ -7,7 +7,7 @@ MUY660-İş Analitiği dersi takım sayfamıza hoş geldiniz.
 
 Malesef adımları doğru yaptığımızı düşünmemize rağmen sayfayı bir türlü düzenlenen şekilde yayınlayamıyoruz. Hep aynı sayfa çıkıyor :(
 
-## Aslan Parçaları :)
+## Takım
 
 1.  [Edin_Džeko](/takim/edindzeko.qmd)
 
