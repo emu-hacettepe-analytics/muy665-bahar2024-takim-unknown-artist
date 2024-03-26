@@ -2,11 +2,11 @@
 title: "Haydar GULTEKIN"
 ---
 
-![](images/IMG_3488.jpg)
+![](images/IMG_3488.jpg){fig-align="center"}
 
 # Eğitim
 
--   Lisans, Selçuk Üniversitesi Elektrik-Elektronik Mühendislisliği (Bölüm İkinciliği), Türkiye, 2011 - 2015
+-   Lisans, Selçuk Üniversitesi Elektrik-Elektronik Mühendislisliği (Bölüm İkinciliği), Türkiye, 2011 - 2015.
 -   Yüksek Lisans, Endüstri Mühendisliği - Mühendislik Yönetimi Programı (Tezsiz), Hacettepe Üniversitesi, Türkiye, 2024 - devam ediyor.
 
 # İş Deneyimi

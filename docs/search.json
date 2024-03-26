@@ -586,5 +586,12 @@
     "title": "Haydar GULTEKIN",
     "section": "Stajlar",
     "text": "Stajlar\n\nEMEK Elektrik A.Ş. - Elektrik Mühendisliği Staj Programı - Uzatılmış 90 gün staj, Akım & Gerilim Ölçü Trafoları üretim ve testler\nTRT, Giriş Kalite Mühendisliği - RF vericiler için transistör ve mosfet komponentleri için Giriş Kalite"
+  },
+  {
+    "objectID": "takim/HaydarGULTEKIN.html",
+    "href": "takim/HaydarGULTEKIN.html",
+    "title": "Haydar GULTEKIN",
+    "section": "",
+    "text": "install.packages(“rmarkdown”, dep = TRUE)"
   }
 ]
