@@ -9,7 +9,7 @@ Malesef adımları doğru yaptığımızı düşünmemize rağmen sayfayı bir t
 
 ## Takım
 
-1.  [Edin_Džeko](/takim/edindzeko.qmd)
+1.  [Utku ÖRÜN](/takim/utkuorun.qmd)
 
 2.  [Dušan Tadić](/takim/dusantadic.qmd)
 
