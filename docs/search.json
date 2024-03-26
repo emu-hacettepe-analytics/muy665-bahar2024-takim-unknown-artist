@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "WINAMP - Unknown Artist",
     "section": "",
-    "text": "MUY660-İş Analitiği dersi takım sayfamıza hoş geldiniz.\nMalesef adımları doğru yaptığımızı düşünmemize rağmen sayfayı bir türlü düzenlenen şekilde yayınlayamıyoruz. Hep aynı sayfa çıkıyor :("
+    "text": "MUY660-İş Analitiği dersi takım sayfamıza hoş geldiniz.\nMalesef adımları doğru yaptığımızı düşünmemize rağmen sayfayı bir türlü düzenlenen şekilde yayınlayamıyoruz. Hep aynı sayfa çıkıyor :(\nNeyse şimdi çözdük gibi :)"
   },
   {
     "objectID": "teammembers/volkansonmez.html",
@@ -229,7 +229,7 @@
     "href": "portfolyo.html",
     "title": "Portfolyo",
     "section": "",
-    "text": "Bu sayfada, MUY665 İş Analitiği dersi 2023-2024 bahar dönemi boyunca yaptığımız analitik çalışmalarını sunmaktayız. Çalışmalarımıza sol menüden ulaşabilirsiniz.\n\n\n\n Back to top",
+    "text": "OLMUYOR OLMUYOR OLMUYOR…\n\n\n\n Back to top",
     "crumbs": [
       "Porfolyo",
       "Portfolyo"
@@ -240,8 +240,9 @@
     "href": "takim.html",
     "title": "Takım Üyeleri",
     "section": "",
-    "text": "Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfalarına gitmek için sol menüyü veya aşağıdaki linkleri kullanabilirsiniz.\n\nTakım Üyeleri\n\nEdin_Džeko\nDušan Tadić\nFrederico Rodrigues de Paula Santos\nSebastian Szymański\n\n\n\n\n\n Back to top",
+    "text": "Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfalarına gitmek için sol menüyü veya aşağıdaki linkleri kullanabilirsiniz.\n\nTakım Üyeleri\n\nUtku ORUN\nHaydar GULTEKIN\nFrederico Rodrigues de Paula Santos\nSebastian Szymański\n\n\n\n\n\n Back to top",
     "crumbs": [
+      "Aslan Parçalari :)",
       "Takım Üyeleri"
     ]
   },
@@ -556,6 +557,20 @@
     "href": "index.html#takım",
     "title": "WINAMP - Unknown Artist",
     "section": "Takım",
-    "text": "Takım\n\nEdin_Džeko\nDušan Tadić\nFrederico Rodrigues de Paula Santos\nSebastian Szymański"
+    "text": "Takım\n\nUtku ORUN\nHaydar GULTEKIN\nFrederico Rodrigues de Paula Santos\nSebastian Szymański"
+  },
+  {
+    "objectID": "takim/utkuorun.html#işler",
+    "href": "takim/utkuorun.html#işler",
+    "title": "Utku ORUN",
+    "section": "İşler",
+    "text": "İşler\n\nFirma HST OTOMOTİV, pozisyon Proje Mühendisi, yıl 2014-2022\nFirma Milmast Yükseltme Sistemleri AŞ, pozisyon Proje Yöneticisi, yıl 2023- Devam ediyor"
+  },
+  {
+    "objectID": "takim/utkuorun.html#stajlar",
+    "href": "takim/utkuorun.html#stajlar",
+    "title": "Utku ORUN",
+    "section": "Stajlar",
+    "text": "Stajlar\n\nFirma Makim AŞ, pozisyon Üretim Stajı, yıl 2011\nFirma Gürbüz Makina, pozisyon Arge Stajı, yıl 2012"
   }
 ]

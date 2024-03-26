@@ -1,8 +1,8 @@
 ---
-title: "Utku ÖRÜN"
+title: "Utku ORUN"
 ---
 
-![](/assets/images/vesikalik.jpeg){fig-align="center"}
+![](/docs/assets/images/utkuorun.jpg){fig-align="center"}
 
 # Eğitim
 

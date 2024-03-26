@@ -6,7 +6,7 @@ Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfaları
 
 # Takım Üyeleri
 
-1.  [Edin_Džeko](/takim/edindzeko.qmd)
+1.  [Utku ORUN](/takim/utkuorun.qmd)
 
 2.  [Haydar GULTEKIN](/takim/HaydarGULTEKIN.qmd)
 
