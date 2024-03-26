@@ -1,14 +1,13 @@
 ---
-title: "Proje UNKNOWN (proje adını yazınız)"
+title: "Proje Unknown Artist"
 number-sections: true
 ---
 
 **Proje sayfamıza hoş geldiniz.**
 
-_Projemizle ilgili güncellemelerden haberdar olmak için bu alanı takip edin._
+*Projemizle ilgili güncellemelerden haberdar olmak için bu alanı takip edin.*
 
-(Aşağıdaki başlıklar örnek olarak verilmiştir; lütfen gerektiği şekilde düzenlemekten çekinmeyin.)
-
+Sorun şu ki; projemizde ne yapacağımızı ve nasıl yapacağımızı bilmiyoruz. Eğer bu yazıyı okuyabiliyorsanız en azından siteyi yayınlayabilmişizdir.
 
 # Proje Genel Bakış ve Kapsamı
 
