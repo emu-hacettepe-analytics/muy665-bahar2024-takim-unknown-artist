@@ -7,11 +7,13 @@ MUY660-İş Analitiği dersi takım sayfamıza hoş geldiniz.
 
 Malesef adımları doğru yaptığımızı düşünmemize rağmen sayfayı bir türlü düzenlenen şekilde yayınlayamıyoruz. Hep aynı sayfa çıkıyor :(
 
+Neyse şimdi çözdük gibi :)
+
 ## Takım
 
 1.  [Utku ORUN](/takim/utkuorun.qmd)
 
-2.  [Dušan Tadić](/takim/dusantadic.qmd)
+2.  [Haydar GULTEKIN](/takim/HaydarGULTEKIN.qmd)
 
 3.  [Frederico Rodrigues de Paula Santos](/takim/fred.qmd)
 
