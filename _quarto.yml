@@ -3,13 +3,13 @@ project:
   output-dir: docs
 
 website:
-  title: "Unknown Artist - Analitik Labı"
+  title: "Unknown Artist - Analitik"
   navbar:
     search: true
     left:
       - text: Ana Sayfa
         href: index.qmd
-      - text: Takım Üyeleri
+      - text: Aslan Parçalari :)
         href: takim.qmd
       - text: Porfolyo
         href: portfolyo.qmd
