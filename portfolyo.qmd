@@ -2,4 +2,6 @@
 title: "Portfolyo"
 ---
 
-OLMUYOR OLMUYOR OLMUYOR...
+**Takım çalışmaları**
+
+Birinci Ödev için bkz. calisma1
