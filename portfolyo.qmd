@@ -4,4 +4,4 @@ title: "Portfolyo"
 
 **Takım çalışmaları**
 
-Birinci Ödev için bkz. calisma1
+Birinci Ödev için bkz. Çalışma 1
