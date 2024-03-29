@@ -10,7 +10,9 @@ Veri bilimi ve endüstri mühendisliği üzerine gerçekleştirilen sohbette ilk
 
 Veri biliminin endüstri mühendisliği ile olan entegrasyonu, veri biliminin sistemleri nasıl daha iyi hale getirdiği ve problemleri nasıl çözdüğü üzerinde duruluyor. Bunlara ek olarak son yıllarda büyük veri tanımıyla birlikte çok fazla duymaya başladığımız yöneylem araştırmaları, veri bilimcileri ve veri analistlerinin giderek yaygınlaşmaya başlandığı vurgulanıyor.
 
-## (b)
+## (b) 
+      Bu madde için yapay zeka kullanılmıştır. Prompt adım adım ilerletilmiştir. Önce R'da mevcut olan mtcars veri seti girişi kodu alınmıştır. Ardından custom_summary fonksiyonu numerik fonksiyon olarak atanmak üzere kod yazdırılmıştır.İlgili maddenin son adımı olarak ortalama, medyan, standart sapma, minimum ve maksimum değerlerin yazdırılması için kod yazdırılmıştır.
+      Sayısal sütunların üzerinde iterasyon yapmak için bir for döngüsü kullanması ve döngü içinde custom_summary fonksiyonunu her sütuna uygulayıp sonuçları yazdırmasını istedik. Kodların çalışırlığı ve doğru sonuçlar verip vermediği değerlendirilmektedir.
 
 ```{r}
 custom_summary <- function(numeric_vector) {
