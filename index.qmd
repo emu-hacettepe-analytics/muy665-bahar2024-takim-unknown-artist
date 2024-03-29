@@ -3,7 +3,7 @@ title: "PROJECT - Unknown Artist"
 sidebar: false 
 ---
 
-![](images/clipboard-3803838625.png)
+![](images/clipboard-3803838625.png){width="273"}
 
 MUY660-İş Analitiği dersi takım sayfamıza hoş geldiniz.
 
