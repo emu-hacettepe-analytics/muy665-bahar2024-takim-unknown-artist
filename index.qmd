@@ -3,11 +3,9 @@ title: "PROJECT - Unknown Artist"
 sidebar: false 
 ---
 
+![](images/clipboard-3803838625.png)
+
 MUY660-İş Analitiği dersi takım sayfamıza hoş geldiniz.
-
-Malesef adımları doğru yaptığımızı düşünmemize rağmen sayfayı bir türlü düzenlenen şekilde yayınlayamıyoruz. Hep aynı sayfa çıkıyor :(
-
-Neyse şimdi çözdük gibi :)
 
 ## Takım
 
