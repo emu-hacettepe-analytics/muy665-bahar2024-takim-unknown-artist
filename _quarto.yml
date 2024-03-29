@@ -9,7 +9,7 @@ website:
     left:
       - text: Ana Sayfa
         href: index.qmd
-      - text: Aslan Parçalari :)
+      - text: Unknown Member
         href: takim.qmd
       - text: Porfolyo
         href: portfolyo.qmd
