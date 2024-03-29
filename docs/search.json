@@ -425,7 +425,7 @@
     "href": "portfolyo/calisma1.html#b",
     "title": "Çalışma 1",
     "section": "(b)",
-    "text": "(b)",
+    "text": "(b)\n\n1 + 1\n\n[1] 2",
     "crumbs": [
       "Porfolyo",
       "Çalışma 1"
@@ -593,5 +593,27 @@
     "title": "Haydar GULTEKIN",
     "section": "",
     "text": "install.packages(“rmarkdown”, dep = TRUE)"
+  },
+  {
+    "objectID": "portfolyo/calisma1.html#a-veri-bilimi-ve-endüstri-mühendisliği-üzerine-sohbetler---cem-vardar-erdi-dasdemir",
+    "href": "portfolyo/calisma1.html#a-veri-bilimi-ve-endüstri-mühendisliği-üzerine-sohbetler---cem-vardar-erdi-dasdemir",
+    "title": "Çalışma 1",
+    "section": "(a) Veri Bilimi ve Endüstri Mühendisliği Üzerine Sohbetler - Cem Vardar & Erdi Dasdemir",
+    "text": "(a) Veri Bilimi ve Endüstri Mühendisliği Üzerine Sohbetler - Cem Vardar & Erdi Dasdemir\nVeri bilimi ve endüstri mühendisliği üzerine gerçekleştirilen sohbette ilk olarak Cem Vardar’ın anlatımıyla mühendislik ve endüstri mühendisliği tanımları anlatılıyor.\nVeri biliminin endüstri mühendisliği ile olan entegrasyonu, veri biliminin sistemleri nasıl daha iyi hale getirdiği ve problemleri nasıl çözdüğü üzerinde duruluyor. Bunlara ek olarak son yıllarda büyük veri tanımıyla birlikte çok fazla duymaya başladığımız yöneylem araştırmaları, veri bilimcileri ve veri analistlerinin giderek yaygınlaşmaya başlandığı vurgulanıyor.",
+    "crumbs": [
+      "Porfolyo",
+      "Çalışma 1"
+    ]
+  },
+  {
+    "objectID": "portfolyo/calisma1.html#c",
+    "href": "portfolyo/calisma1.html#c",
+    "title": "Çalışma 1",
+    "section": "(c)",
+    "text": "(c)",
+    "crumbs": [
+      "Porfolyo",
+      "Çalışma 1"
+    ]
   }
 ]

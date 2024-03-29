@@ -3,14 +3,17 @@ title: "Çalışma 1"
 ---
 
 \
-(Aşağıdakiler örnek olarak verilmiştir.)
 
-Bu çalışmada 3 görevimiz var. Bu görevler..... Bunlara sırayla aşağıda cevap arıyoruz.
+## (a) Veri Bilimi ve Endüstri Mühendisliği Üzerine Sohbetler - Cem Vardar &  Erdi Dasdemir
 
-## (a)
+Veri bilimi ve endüstri mühendisliği üzerine gerçekleştirilen sohbette ilk olarak Cem Vardar'ın anlatımıyla mühendislik ve endüstri mühendisliği tanımları anlatılıyor.
+
+Veri biliminin endüstri mühendisliği ile olan entegrasyonu, veri biliminin sistemleri nasıl daha iyi hale getirdiği ve problemleri nasıl çözdüğü üzerinde duruluyor. Bunlara ek olarak son yıllarda büyük veri tanımıyla birlikte çok fazla duymaya başladığımız yöneylem araştırmaları, veri bilimcileri ve veri analistlerinin giderek yaygınlaşmaya başlandığı vurgulanıyor.
+
+## (b)
 
 ```{r}
 1 + 1
 ```
 
-## (b)
+## (c)
