@@ -13,7 +13,36 @@ Veri biliminin endüstri mühendisliği ile olan entegrasyonu, veri biliminin si
 ## (b)
 
 ```{r}
-1 + 1
+custom_summary <- function(numeric_vector) {
+  mean_value <- mean(numeric_vector)
+  median_value <- median(numeric_vector)
+  sd_value <- sd(numeric_vector)
+  min_value <- min(numeric_vector)
+  max_value <- max(numeric_vector)      
+
+  return(list(
+    mean = mean_value,
+    median = median_value,
+    standard_deviation = sd_value,
+    minimum = min_value,
+    maximum = max_value
+  ))
+}
+
+mpg_summary <- custom_summary(mtcars$mpg)
+print(mpg_summary)
+
+for (col_name in names(mtcars)) {
+
+  if (is.numeric(mtcars[[col_name]])) {
+    summary <- custom_summary(mtcars[[col_name]])
+    cat(col_name, "Özet İstatistikler:\n")
+    print(summary)
+    cat("\n")
+  }
+}
+
 ```
 
 ## (c)
+
