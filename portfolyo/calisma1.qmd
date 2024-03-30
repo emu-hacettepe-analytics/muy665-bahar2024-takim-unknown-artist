@@ -46,5 +46,15 @@ for (col_name in names(mtcars)) {
 
 ```
 
-## (c)
+## (c) Bu madde için sadece ders notlarından yararlanılmıştır.
+```{r}
+library(dslabs)
+data(na_example)
+na_example
+sum(is.na(na_example))
+no_nas<-ifelse(is.na(na_example), 665, na_example)
+no_nas
+sum(is.na(no_nas))
+sum(no_nas==665)
+```
 
