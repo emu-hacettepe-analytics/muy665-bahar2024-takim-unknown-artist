@@ -313,11 +313,7 @@
     "href": "portfolyo/calisma1.html",
     "title": "Çalışma 1",
     "section": "",
-    "text": "(Aşağıdakiler örnek olarak verilmiştir.)\nBu çalışmada 3 görevimiz var. Bu görevler….. Bunlara sırayla aşağıda cevap arıyoruz.",
-    "crumbs": [
-      "Porfolyo",
-      "Çalışma 1"
-    ]
+    "text": "Veri bilimi ve endüstri mühendisliği üzerine gerçekleştirilen sohbette ilk olarak Cem Vardar’ın anlatımıyla mühendislik ve endüstri mühendisliği tanımları anlatılıyor.\nVeri biliminin endüstri mühendisliği ile olan entegrasyonu, veri biliminin sistemleri nasıl daha iyi hale getirdiği ve problemleri nasıl çözdüğü üzerinde duruluyor. Bunlara ek olarak son yıllarda büyük veri tanımıyla birlikte çok fazla duymaya başladığımız yöneylem araştırmaları, veri bilimcileri ve veri analistlerinin giderek yaygınlaşmaya başlandığı vurgulanıyor."
   },
   {
     "objectID": "proje.html#veri-kaynağı",
@@ -566,8 +562,8 @@
     "objectID": "portfolyo/calisma1.html#a-veri-bilimi-ve-endüstri-mühendisliği-üzerine-sohbetler---cem-vardar-erdi-dasdemir",
     "href": "portfolyo/calisma1.html#a-veri-bilimi-ve-endüstri-mühendisliği-üzerine-sohbetler---cem-vardar-erdi-dasdemir",
     "title": "Çalışma 1",
-    "section": "(a) Veri Bilimi ve Endüstri Mühendisliği Üzerine Sohbetler - Cem Vardar & Erdi Dasdemir",
-    "text": "(a) Veri Bilimi ve Endüstri Mühendisliği Üzerine Sohbetler - Cem Vardar & Erdi Dasdemir\nVeri bilimi ve endüstri mühendisliği üzerine gerçekleştirilen sohbette ilk olarak Cem Vardar’ın anlatımıyla mühendislik ve endüstri mühendisliği tanımları anlatılıyor.\nVeri biliminin endüstri mühendisliği ile olan entegrasyonu, veri biliminin sistemleri nasıl daha iyi hale getirdiği ve problemleri nasıl çözdüğü üzerinde duruluyor. Bunlara ek olarak son yıllarda büyük veri tanımıyla birlikte çok fazla duymaya başladığımız yöneylem araştırmaları, veri bilimcileri ve veri analistlerinin giderek yaygınlaşmaya başlandığı vurgulanıyor."
+    "section": "",
+    "text": "Veri bilimi ve endüstri mühendisliği üzerine gerçekleştirilen sohbette ilk olarak Cem Vardar’ın anlatımıyla mühendislik ve endüstri mühendisliği tanımları anlatılıyor.\nVeri biliminin endüstri mühendisliği ile olan entegrasyonu, veri biliminin sistemleri nasıl daha iyi hale getirdiği ve problemleri nasıl çözdüğü üzerinde duruluyor. Bunlara ek olarak son yıllarda büyük veri tanımıyla birlikte çok fazla duymaya başladığımız yöneylem araştırmaları, veri bilimcileri ve veri analistlerinin giderek yaygınlaşmaya başlandığı vurgulanıyor."
   },
   {
     "objectID": "portfolyo/calisma1.html#c",
@@ -663,5 +659,12 @@
     "title": "Serkan MUTLU",
     "section": "Stajlar",
     "text": "Stajlar\n\nGlobmac, Makine Mühendisliği- 60 Gün Üretim Stajı- 2015\nORAY Otomotiv, Makine Mühendisiği - Kontrol, Saha stajı- 2017"
+  },
+  {
+    "objectID": "portfolyo/calisma1.html#a-veri-bilimi-ve-endüstri-mühendisliği-üzerine-sohbetler-baykal-hafizoğlu",
+    "href": "portfolyo/calisma1.html#a-veri-bilimi-ve-endüstri-mühendisliği-üzerine-sohbetler-baykal-hafizoğlu",
+    "title": "Çalışma 1",
+    "section": "(a) Veri Bilimi ve Endüstri Mühendisliği Üzerine Sohbetler – Baykal HAFIZOĞLU",
+    "text": "(a) Veri Bilimi ve Endüstri Mühendisliği Üzerine Sohbetler – Baykal HAFIZOĞLU\nOR/Analytics Dünyası incelendiğinde, Yapay Zeka (AI)’dan  çıkınca dünya 4 e ayrılır\n1.        Descriptive: Tanımlamaya çalışan analitin yöntemler. Datadan basit çıkarımlar yapılır\n2.        Diagnostic: Sorun var, sorunun neden olabileceğine bakıyorsun\n3.        Predictive: Gelecekte ne olacak tahmin edilir.\n4.        Prescriptive: soruna yönelik çözümleri yazan analitik yöntemlerdir\nYukarıdaki 4 başlığa baktığımızda Endüstri Mühendisliği alan derslerinin neredeyse tamamının burada bağlantılı olduğunu görebiliriz. Örneğin\n1: Data Mining, Data Visulation, Time Series Analysis\n2: Clustering, Hypothesis Testing, Regression\n3: Machine Learning, Regression, Simulation, Clustering\n4: Optimization, Math Modeling,\nAslında bu 4 yöntem birbiri ile bağlıdır. 4 başlığa göre kullanılan yöntemler haritalandırılmıştır.\n Mesela, Machine Learning: gelecekte ne olacak tahmini yapmaktadır. Haritalandırma kısmında bağlantı, input output çok çok önemli.\nYukarıdaki 4lü metotlar genelde birlikte gelir (ilk üçü)\nCustom made. excel genel bir tabir iken makro ile özelleştirdiğin anda custom olur son kullanıcı için daha kullanışlıdır ancak çok daha pahalıdır. Buradaki deliverableler takımın ortaya koyduğu çalışmadır. Software yoksa consulting Project olabilir. Hizmet satmak olarak kabul edilebilir.\nİlk olarak KPI tanımlanmalıdır, Problemi ve bir hedefi KPI ile sayısal orana bağlanmalıdır. Herkesin anlayacağı şekilde hesaplanabilir bir metrik ile son kullanıcıya açıklanmalıdır.\nKPI’lar için başarı kriterleri tanımlanmalıdır\nProblem Tanımı önemli, KPI tanımı önemlidir, aynı dilden anlaşılacak şeyler önemlidir\nAI projelerinin %87 si geliştirilmiyor. Son kullanıcıya gitmiyor. Bunun nedeni incelendiğinde Deploymnet platform seçimi kritik, prototip kritik, kullanıcı arayüzü kritik —USER INTERFACE çok önemli—\nKullanıcıyı ikna edip yazılımı kullanması ve geri besleme vermesi önemlidir. Bu yüzden early prototype kritik\nSon kullanıcı her zaman %100 haklıdır ve bu kişi mutlu edilmelidir,\nÇözüm üretip insanlardan kısa sürede dönüş almak çok önemlidir\nFeedback ruhu çok önemli. İnsanlar para verse dahi kullanmama durumu olabiliyor\nAnalitik modelin mantığını açıklayabiliyor olman lazım. İnsanların bunu anlaması lazım. Çözümlerin açıklanabilir olması lazım.\nÇözümün gücünü göstermek için matematiksel gösterim önemli (BAU – Business as Usual)\nKPI’lar karşılaştırılıp bir grafiğe atanınca sonuçlar çok daha net anlaşılır"
   }
 ]

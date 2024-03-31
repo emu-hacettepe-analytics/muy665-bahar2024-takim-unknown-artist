@@ -2,13 +2,63 @@
 title: "Çalışma 1"
 ---
 
-\
-
 ## (a) Veri Bilimi ve Endüstri Mühendisliği Üzerine Sohbetler - Cem Vardar & Erdi Dasdemir
 
 Veri bilimi ve endüstri mühendisliği üzerine gerçekleştirilen sohbette ilk olarak Cem Vardar'ın anlatımıyla mühendislik ve endüstri mühendisliği tanımları anlatılıyor.
 
 Veri biliminin endüstri mühendisliği ile olan entegrasyonu, veri biliminin sistemleri nasıl daha iyi hale getirdiği ve problemleri nasıl çözdüğü üzerinde duruluyor. Bunlara ek olarak son yıllarda büyük veri tanımıyla birlikte çok fazla duymaya başladığımız yöneylem araştırmaları, veri bilimcileri ve veri analistlerinin giderek yaygınlaşmaya başlandığı vurgulanıyor.
+
+## **(a) Veri Bilimi ve Endüstri Mühendisliği Üzerine Sohbetler – Baykal HAFIZOĞLU**
+
+OR/Analytics Dünyası incelendiğinde, Yapay Zeka (AI)’dan  çıkınca dünya 4 e ayrılır
+
+1.        Descriptive: Tanımlamaya çalışan analitin yöntemler. Datadan basit çıkarımlar yapılır
+
+2.        Diagnostic: Sorun var, sorunun neden olabileceğine bakıyorsun
+
+3.        Predictive: Gelecekte ne olacak tahmin edilir.
+
+4.        Prescriptive: soruna yönelik çözümleri yazan analitik yöntemlerdir
+
+Yukarıdaki 4 başlığa baktığımızda Endüstri Mühendisliği alan derslerinin neredeyse tamamının burada bağlantılı olduğunu görebiliriz. Örneğin
+
+1: Data Mining, Data Visulation, Time Series Analysis
+
+2: Clustering, Hypothesis Testing, Regression
+
+3: Machine Learning, Regression, Simulation, Clustering
+
+4: Optimization, Math Modeling,
+
+Aslında bu 4 yöntem birbiri ile bağlıdır. 4 başlığa göre kullanılan yöntemler haritalandırılmıştır.
+
+ Mesela, Machine Learning: gelecekte ne olacak tahmini yapmaktadır. Haritalandırma kısmında bağlantı, input output çok çok önemli.
+
+Yukarıdaki 4lü metotlar genelde birlikte gelir (ilk üçü)
+
+Custom made. excel genel bir tabir iken makro ile özelleştirdiğin anda custom olur son kullanıcı için daha kullanışlıdır ancak çok daha pahalıdır. Buradaki deliverableler takımın ortaya koyduğu çalışmadır. Software yoksa consulting Project olabilir. Hizmet satmak olarak kabul edilebilir.
+
+İlk olarak KPI tanımlanmalıdır, Problemi ve bir hedefi KPI ile sayısal orana bağlanmalıdır. Herkesin anlayacağı şekilde hesaplanabilir bir metrik ile son kullanıcıya açıklanmalıdır.
+
+KPI’lar için başarı kriterleri tanımlanmalıdır
+
+Problem Tanımı önemli, KPI tanımı önemlidir, aynı dilden anlaşılacak şeyler önemlidir
+
+AI projelerinin %87 si geliştirilmiyor. Son kullanıcıya gitmiyor. Bunun nedeni incelendiğinde Deploymnet platform seçimi kritik, prototip kritik, kullanıcı arayüzü kritik ---USER INTERFACE çok önemli---
+
+Kullanıcıyı ikna edip yazılımı kullanması ve geri besleme vermesi önemlidir. Bu yüzden early prototype kritik
+
+Son kullanıcı her zaman %100 haklıdır ve bu kişi mutlu edilmelidir,
+
+Çözüm üretip insanlardan kısa sürede dönüş almak çok önemlidir
+
+Feedback ruhu çok önemli. İnsanlar para verse dahi kullanmama durumu olabiliyor
+
+Analitik modelin mantığını açıklayabiliyor olman lazım. İnsanların bunu anlaması lazım. Çözümlerin açıklanabilir olması lazım.
+
+Çözümün gücünü göstermek için matematiksel gösterim önemli (BAU – Business as Usual)
+
+KPI’lar karşılaştırılıp bir grafiğe atanınca sonuçlar çok daha net anlaşılır
 
 ## (b)
 
