@@ -2,7 +2,7 @@
 title: "Serkan MUTLU"
 ---
 
-![](images/WhatsApp Image 2024-03-31 at 14.10.49-01.jpeg){fig-align="center" width="250"}
+![](images/WhatsApp%20Image%202024-03-31%20at%2014.10.49-01.jpeg){fig-align="center" width="250"}
 
 # Eğitim
 
@@ -23,11 +23,13 @@ title: "Serkan MUTLU"
 
 1.  Globmac, Makine Mühendisliği- 60 Gün Üretim Stajı- 2015
 
-2.   ORAY Otomotiv, Makine Mühendisiği - Kontrol, Saha stajı- 2017
+2.  ORAY Otomotiv, Makine Mühendisiği - Kontrol, Saha stajı- 2017
 
 # Projeler
 
 1.  TÜBİTAK Efficiency Chalenge ( Electromobile Efficiency Competition)
+2.  Güneş Enerjisi İle Beslenen Hareket Otomasyonlu Aydınlatma Sistemi - Sakarya Üniversitesi
+3.  Atık Madde Geri dönüşümü İle Biogaz Üretimi Ve Depolama- Sakarya Üniversitesi
 
 # Yayınlar
 
