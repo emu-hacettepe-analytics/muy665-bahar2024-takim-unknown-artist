@@ -4,15 +4,18 @@ title: "Çalışma 1"
 
 \
 
-## (a) Veri Bilimi ve Endüstri Mühendisliği Üzerine Sohbetler - Cem Vardar &  Erdi Dasdemir
+## (a) Veri Bilimi ve Endüstri Mühendisliği Üzerine Sohbetler - Cem Vardar & Erdi Dasdemir
 
 Veri bilimi ve endüstri mühendisliği üzerine gerçekleştirilen sohbette ilk olarak Cem Vardar'ın anlatımıyla mühendislik ve endüstri mühendisliği tanımları anlatılıyor.
 
 Veri biliminin endüstri mühendisliği ile olan entegrasyonu, veri biliminin sistemleri nasıl daha iyi hale getirdiği ve problemleri nasıl çözdüğü üzerinde duruluyor. Bunlara ek olarak son yıllarda büyük veri tanımıyla birlikte çok fazla duymaya başladığımız yöneylem araştırmaları, veri bilimcileri ve veri analistlerinin giderek yaygınlaşmaya başlandığı vurgulanıyor.
 
-## (b) 
-      Bu madde için yapay zeka kullanılmıştır. Prompt adım adım ilerletilmiştir. Önce R'da mevcut olan mtcars veri seti girişi kodu alınmıştır. Ardından custom_summary fonksiyonu numerik fonksiyon olarak atanmak üzere kod yazdırılmıştır.İlgili maddenin son adımı olarak ortalama, medyan, standart sapma, minimum ve maksimum değerlerin yazdırılması için kod yazdırılmıştır.
-      Sayısal sütunların üzerinde iterasyon yapmak için bir for döngüsü kullanması ve döngü içinde custom_summary fonksiyonunu her sütuna uygulayıp sonuçları yazdırmasını istedik. Kodların çalışırlığı ve doğru sonuçlar verip vermediği değerlendirilmektedir.
+## (b)
+
+```         
+  Bu madde için yapay zeka kullanılmıştır. Prompt adım adım ilerletilmiştir. Önce R'da mevcut olan mtcars veri seti girişi kodu alınmıştır. Ardından custom_summary fonksiyonu numerik fonksiyon olarak atanmak üzere kod yazdırılmıştır.İlgili maddenin son adımı olarak ortalama, medyan, standart sapma, minimum ve maksimum değerlerin yazdırılması için kod yazdırılmıştır.
+  Sayısal sütunların üzerinde iterasyon yapmak için bir for döngüsü kullanması ve döngü içinde custom_summary fonksiyonunu her sütuna uygulayıp sonuçları yazdırmasını istedik. Kodların çalışırlığı ve doğru sonuçlar verip vermediği değerlendirilmektedir.
+```
 
 ```{r}
 custom_summary <- function(numeric_vector) {
@@ -47,6 +50,7 @@ for (col_name in names(mtcars)) {
 ```
 
 ## (c) Bu madde için sadece ders notlarından yararlanılmıştır.
+
 ```{r}
 library(dslabs)
 data(na_example)
@@ -57,4 +61,3 @@ no_nas
 sum(is.na(no_nas))
 sum(no_nas==665)
 ```
-
