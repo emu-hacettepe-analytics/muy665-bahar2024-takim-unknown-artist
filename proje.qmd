@@ -7,11 +7,9 @@ number-sections: true
 
 *TÜRKİYE İLLERİNDE 2023 YILINDA GERÇEKLEŞEN TOPLAM KONUT SATIŞLARI ANALİZİ*
 
-
-
 # Proje Genel Bakış ve Kapsamı
 
-Projemizde TÜrkiye'de 2023 yılında gerçekleşen toplam konut satışlarının illere göre analizi yapılacaktır.
+Projemizde Türkiye'de 2023 yılında gerçekleşen toplam konut satışlarının illere göre analizi yapılmıştır.
 
 # Veri
 
@@ -24,7 +22,7 @@ print(veri)
 
 ## 
 
-```{}
+```         
 ```
 
 ## Veri Kaynağı
@@ -39,11 +37,11 @@ xxxxxx
 
 ## Tercih Sebebi
 
-TÜrkiye'deki konut satışlarının illere göre karşılaştırılması ve konut sirkülasyonunun net bir şekilde analiz edilebilmesine olanak tanınması, bu veri setinin tercih edilmesinde büyük önem taşımaktadır. Ayrıca 6 Şubat 2023 yılında gerçekleşen deprem felaketinin ardından zarar gören 11 ildeki konut satışlarının ne derece etkilendiğini görebilmek adına veri seti ilgi çekici bulunmuştur.
+Türkiye'deki konut satışlarının illere göre karşılaştırılması ve konut sirkülasyonunun net bir şekilde analiz edilebilmesine olanak tanınması, bu veri setinin tercih edilmesinde büyük önem taşımaktadır. Ayrıca 6 Şubat 2023 yılında gerçekleşen deprem felaketinin ardından zarar gören 11 ildeki konut satışlarının ne derece etkilendiğini görebilmek adına veri seti ilgi çekici bulunmuştur.
 
 ## Ön İşleme
 
-Web sitesinden indirilen excel formatındaki ham veri R studio'nun okuyamayacağı türden tablolar içermektedir. Ayrıca R studio'nun okuyamadağı Türkçe karakterler ve sayı formatları yeniden işlenmiş ve yeni bir dosya olarak kaydedildikten sonra okutulmuştur. 
+R studio'nun dış kaynaktan .xlsx veya .csv formatında verileri okuyabilmesi için ilk etapta "readxl" paketi yüklenmiştir. Web sitesinden indirilen excel formatındaki ham veri R studio'nun okuyamayacağı türden tablolar içermektedir. Ayrıca R studio'nun okuyamadağı Türkçe karakterler ve sayı formatları yeniden işlenmiş ve yeni bir dosya olarak kaydedildikten sonra okutulmuştur.
 
 # Analiz
 

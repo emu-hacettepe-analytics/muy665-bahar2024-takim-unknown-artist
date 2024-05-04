@@ -342,14 +342,14 @@
     "href": "proje.html#tercih-sebebi",
     "title": "Proje Unknown Artist",
     "section": "2.4 Tercih Sebebi",
-    "text": "2.4 Tercih Sebebi\nTÜrkiye’deki konut satışlarının illere göre karşılaştırılması ve konut sirkülasyonunun net bir şekilde analiz edilebilmesine olanak tanınması, bu veri setinin tercih edilmesinde büyük önem taşımaktadır. Ayrıca 6 Şubat 2023 yılında gerçekleşen deprem felaketinin ardından zarar gören 11 ildeki konut satışlarının ne derece etkilendiğini görebilmek adına veri seti ilgi çekici bulunmuştur."
+    "text": "2.4 Tercih Sebebi\nTürkiye’deki konut satışlarının illere göre karşılaştırılması ve konut sirkülasyonunun net bir şekilde analiz edilebilmesine olanak tanınması, bu veri setinin tercih edilmesinde büyük önem taşımaktadır. Ayrıca 6 Şubat 2023 yılında gerçekleşen deprem felaketinin ardından zarar gören 11 ildeki konut satışlarının ne derece etkilendiğini görebilmek adına veri seti ilgi çekici bulunmuştur."
   },
   {
     "objectID": "proje.html#ön-işleme",
     "href": "proje.html#ön-işleme",
     "title": "Proje Unknown Artist",
     "section": "2.5 Ön İşleme",
-    "text": "2.5 Ön İşleme\nWeb sitesinden indirilen excel formatındaki ham veri R studio’nun okuyamayacağı türden tablolar içermektedir. Ayrıca R studio’nun okuyamadağı Türkçe karakterler ve sayı formatları yeniden işlenmiş ve yeni bir dosya olarak kaydedildikten sonra okutulmuştur."
+    "text": "2.5 Ön İşleme\nR studio’nun dış kaynaktan .xlsx veya .csv formatında verileri okuyabilmesi için ilk etapta “readxl” paketi yüklenmiştir. Web sitesinden indirilen excel formatındaki ham veri R studio’nun okuyamayacağı türden tablolar içermektedir. Ayrıca R studio’nun okuyamadağı Türkçe karakterler ve sayı formatları yeniden işlenmiş ve yeni bir dosya olarak kaydedildikten sonra okutulmuştur."
   },
   {
     "objectID": "proje.html#keşifsel-veri-analizi",
