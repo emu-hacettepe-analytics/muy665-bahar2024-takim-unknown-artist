@@ -160,11 +160,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#proje-genel-bakış-ve-kapsamı" id="toc-proje-genel-bakış-ve-kapsamı" class="nav-link active" data-scroll-target="#proje-genel-bakış-ve-kapsamı"><span class="header-section-number">1</span> Proje Genel Bakış ve Kapsamı</a></li>
   <li><a href="#veri" id="toc-veri" class="nav-link" data-scroll-target="#veri"><span class="header-section-number">2</span> Veri</a>
   <ul class="collapse">
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"><span class="header-section-number">2.1</span> </a></li>
-  <li><a href="#veri-kaynağı" id="toc-veri-kaynağı" class="nav-link" data-scroll-target="#veri-kaynağı"><span class="header-section-number">2.2</span> Veri Kaynağı</a></li>
-  <li><a href="#veri-hakkında-genel-bilgiler" id="toc-veri-hakkında-genel-bilgiler" class="nav-link" data-scroll-target="#veri-hakkında-genel-bilgiler"><span class="header-section-number">2.3</span> Veri Hakkında Genel Bilgiler</a></li>
-  <li><a href="#tercih-sebebi" id="toc-tercih-sebebi" class="nav-link" data-scroll-target="#tercih-sebebi"><span class="header-section-number">2.4</span> Tercih Sebebi</a></li>
-  <li><a href="#ön-işleme" id="toc-ön-işleme" class="nav-link" data-scroll-target="#ön-işleme"><span class="header-section-number">2.5</span> Ön İşleme</a></li>
+  <li><a href="#veri-seti-önizleme" id="toc-veri-seti-önizleme" class="nav-link" data-scroll-target="#veri-seti-önizleme"><span class="header-section-number">2.1</span> Veri Seti Önizleme</a></li>
+  <li><a href="#eksik-veri-kontrolü" id="toc-eksik-veri-kontrolü" class="nav-link" data-scroll-target="#eksik-veri-kontrolü"><span class="header-section-number">2.2</span> Eksik Veri Kontrolü</a></li>
+  <li><a href="#veri-kaynağı" id="toc-veri-kaynağı" class="nav-link" data-scroll-target="#veri-kaynağı"><span class="header-section-number">2.3</span> Veri Kaynağı</a></li>
+  <li><a href="#veri-hakkında-genel-bilgiler" id="toc-veri-hakkında-genel-bilgiler" class="nav-link" data-scroll-target="#veri-hakkında-genel-bilgiler"><span class="header-section-number">2.4</span> Veri Hakkında Genel Bilgiler</a></li>
+  <li><a href="#tercih-sebebi" id="toc-tercih-sebebi" class="nav-link" data-scroll-target="#tercih-sebebi"><span class="header-section-number">2.5</span> Tercih Sebebi</a></li>
+  <li><a href="#ön-işleme" id="toc-ön-işleme" class="nav-link" data-scroll-target="#ön-işleme"><span class="header-section-number">2.6</span> Ön İşleme</a></li>
   </ul></li>
   <li><a href="#analiz" id="toc-analiz" class="nav-link" data-scroll-target="#analiz"><span class="header-section-number">3</span> Analiz</a>
   <ul class="collapse">
@@ -232,25 +233,101 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 # ℹ 71 more rows</code></pre>
 </div>
 </div>
-<section id="section" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="section"><span class="header-section-number">2.1</span> </h2>
-<pre><code></code></pre>
+<section id="veri-seti-önizleme" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="veri-seti-önizleme"><span class="header-section-number">2.1</span> Veri Seti Önizleme</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(veri)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>tibble [81 × 3] (S3: tbl_df/tbl/data.frame)
+ $ SEHIR: chr [1:81] "ADANA" "ADIYAMAN" "AFYONKARAHISAR" "AGRI" ...
+ $ 2022 : num [1:81] 26908 8198 11024 3102 5339 ...
+ $ 2023 : num [1:81] 16925 3725 7717 2208 4075 ...</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(veri)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 3
+  SEHIR          `2022` `2023`
+  &lt;chr&gt;           &lt;dbl&gt;  &lt;dbl&gt;
+1 ADANA           26908  16925
+2 ADIYAMAN         8198   3725
+3 AFYONKARAHISAR  11024   7717
+4 AGRI             3102   2208
+5 AMASYA           5339   4075
+6 ANKARA         126166  94724</code></pre>
+</div>
+</div>
 </section>
-<section id="veri-kaynağı" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="veri-kaynağı"><span class="header-section-number">2.2</span> Veri Kaynağı</h2>
+<section id="eksik-veri-kontrolü" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="eksik-veri-kontrolü"><span class="header-section-number">2.2</span> Eksik Veri Kontrolü</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(<span class="fu">is.na</span>(veri))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(veri)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>    SEHIR                2022             2023       
+ Length:81          Min.   :   468   Min.   :   290  
+ Class :character   1st Qu.:  4044   1st Qu.:  2568  
+ Mode  :character   Median :  8177   Median :  5556  
+                    Mean   : 18341   Mean   : 12270  
+                    3rd Qu.: 21789   3rd Qu.: 14506  
+                    Max.   :259654   Max.   :159838  </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(veri)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "SEHIR" "2022"  "2023" </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(reshape2)</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(scales)</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Veri setini yeniden şekillendirme</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>veri_long <span class="ot">&lt;-</span> <span class="fu">melt</span>(veri, <span class="at">id.vars =</span> <span class="st">"SEHIR"</span>, <span class="at">variable.name =</span> <span class="st">"Yil"</span>, <span class="at">value.name =</span> <span class="st">"Satislar"</span>)</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Kutu grafiği çizimi, boyut ve tema ayarları ile</span></span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> veri_long, <span class="fu">aes</span>(<span class="at">x =</span> Yil, <span class="at">y =</span> Satislar, <span class="at">fill =</span> Yil)) <span class="sc">+</span></span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Yıllara Göre Konut Satışlarının Kutu Grafiği"</span>,</span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Yıl"</span>,</span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Konut Satış Sayısı"</span>) <span class="sc">+</span></span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">12</span>),  <span class="co"># Metin boyutunu artırma</span></span>
+<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">14</span>),  <span class="co"># Eksen başlıklarının boyutunu artırma</span></span>
+<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">12</span>),  <span class="co"># Eksen metinlerinin boyutunu artırma</span></span>
+<span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a>        <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">16</span>, <span class="at">hjust =</span> <span class="fl">0.5</span>)) <span class="sc">+</span>  <span class="co"># Başlık boyutunu artırma ve ortalam</span></span>
+<span id="cb13-19"><a href="#cb13-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_brewer</span>(<span class="at">palette =</span> <span class="st">"Pastel1"</span>) <span class="sc">+</span></span>
+<span id="cb13-20"><a href="#cb13-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> comma, <span class="at">limits =</span> <span class="fu">c</span>(<span class="cn">NA</span>, <span class="fu">max</span>(veri_long<span class="sc">$</span>Satislar) <span class="sc">*</span> <span class="fl">1.1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="proje_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="veri-kaynağı" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="veri-kaynağı"><span class="header-section-number">2.3</span> Veri Kaynağı</h2>
 <p>Projemiz için elde ettiğimiz verinin kaynağı Türkiye İstatistik Kurumu web sitesidir.</p>
 <p>Detay için bkz. “https://biruni.tuik.gov.tr/ilgosterge/?locale=tr”</p>
 </section>
-<section id="veri-hakkında-genel-bilgiler" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="veri-hakkında-genel-bilgiler"><span class="header-section-number">2.3</span> Veri Hakkında Genel Bilgiler</h2>
+<section id="veri-hakkında-genel-bilgiler" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="veri-hakkında-genel-bilgiler"><span class="header-section-number">2.4</span> Veri Hakkında Genel Bilgiler</h2>
 <p>xxxxxx</p>
 </section>
-<section id="tercih-sebebi" class="level2" data-number="2.4">
-<h2 data-number="2.4" class="anchored" data-anchor-id="tercih-sebebi"><span class="header-section-number">2.4</span> Tercih Sebebi</h2>
+<section id="tercih-sebebi" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="tercih-sebebi"><span class="header-section-number">2.5</span> Tercih Sebebi</h2>
 <p>Türkiye’deki konut satışlarının illere göre karşılaştırılması ve konut sirkülasyonunun net bir şekilde analiz edilebilmesine olanak tanınması, bu veri setinin tercih edilmesinde büyük önem taşımaktadır. Ayrıca 6 Şubat 2023 yılında gerçekleşen deprem felaketinin ardından zarar gören 11 ildeki konut satışlarının ne derece etkilendiğini görebilmek adına veri seti ilgi çekici bulunmuştur.</p>
 </section>
-<section id="ön-işleme" class="level2" data-number="2.5">
-<h2 data-number="2.5" class="anchored" data-anchor-id="ön-işleme"><span class="header-section-number">2.5</span> Ön İşleme</h2>
+<section id="ön-işleme" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="ön-işleme"><span class="header-section-number">2.6</span> Ön İşleme</h2>
 <p>R studio’nun dış kaynaktan .xlsx veya .csv formatında verileri okuyabilmesi için ilk etapta “readxl” paketi yüklenmiştir. Web sitesinden indirilen excel formatındaki ham veri R studio’nun okuyamayacağı türden tablolar içermektedir. Ayrıca R studio’nun okuyamadağı Türkçe karakterler ve sayı formatları yeniden işlenmiş ve yeni bir dosya olarak kaydedildikten sonra okutulmuştur.</p>
 </section>
 </section>

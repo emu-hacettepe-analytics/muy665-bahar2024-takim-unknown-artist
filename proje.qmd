@@ -19,10 +19,51 @@ veri <- read_excel("C:/Users/Pc/Desktop/2023KONUT.xlsx")
 print(veri)
 
 ```
+## Veri Seti Önizleme
 
-## 
+```{r}
+str(veri)
+head(veri)
 
-```         
+```
+
+## Eksik Veri Kontrolü
+
+```{r}
+sum(is.na(veri))
+
+```
+
+```{r}
+summary(veri)
+
+```
+
+```{r}
+colnames(veri)
+
+```
+```{r}
+library(ggplot2)
+library(reshape2)
+library(scales)
+
+# Veri setini yeniden şekillendirme
+veri_long <- melt(veri, id.vars = "SEHIR", variable.name = "Yil", value.name = "Satislar")
+
+# Kutu grafiği çizimi, boyut ve tema ayarları ile
+ggplot(data = veri_long, aes(x = Yil, y = Satislar, fill = Yil)) +
+  geom_boxplot() +
+  labs(title = "Yıllara Göre Konut Satışlarının Kutu Grafiği",
+       x = "Yıl",
+       y = "Konut Satış Sayısı") +
+  theme_minimal() +
+  theme(text = element_text(size = 12),  # Metin boyutunu artırma
+        axis.title = element_text(size = 14),  # Eksen başlıklarının boyutunu artırma
+        axis.text = element_text(size = 12),  # Eksen metinlerinin boyutunu artırma
+        plot.title = element_text(size = 16, hjust = 0.5)) +  # Başlık boyutunu artırma ve ortalam
+  scale_fill_brewer(palette = "Pastel1") +
+  scale_y_continuous(labels = comma, limits = c(NA, max(veri_long$Satislar) * 1.1))
 ```
 
 ## Veri Kaynağı
