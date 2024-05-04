@@ -15,8 +15,6 @@ MUY660-İş Analitiği dersi takım sayfamıza hoş geldiniz.
 
 3.  [Serkan MUTLU](/takim/serkanmutlu.qmd)
 
-4.  [Sebastian Szymański](/takim/szymanski.qmd)
-
 ## Proje Adı
 
 MUY660-İş Analitiği iyileştirme çalışmaları (örnek)
