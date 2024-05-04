@@ -43,7 +43,7 @@ TÜrkiye'deki konut satışlarının illere göre karşılaştırılması ve kon
 
 ## Ön İşleme
 
-Web sitesinden indirilen excel formatındaki ham veri R studio'nun okuyamayacağı türden tablolar içermektedir. Ayrıca R studio'nun okuyamadağı Türkçe karakterler yeniden işlenmiş ve yeni bir dosya olarak kaydedildikten sonra okutulmuştur. 
+Web sitesinden indirilen excel formatındaki ham veri R studio'nun okuyamayacağı türden tablolar içermektedir. Ayrıca R studio'nun okuyamadağı Türkçe karakterler ve sayı formatları yeniden işlenmiş ve yeni bir dosya olarak kaydedildikten sonra okutulmuştur. 
 
 # Analiz
 

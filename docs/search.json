@@ -349,7 +349,7 @@
     "href": "proje.html#ön-işleme",
     "title": "Proje Unknown Artist",
     "section": "2.5 Ön İşleme",
-    "text": "2.5 Ön İşleme\nWeb sitesinden indirilen excel formatındaki ham veri R studio’nun okuyamayacağı türden tablolar içermektedir. Ayrıca R studio’nun okuyamadağı Türkçe karakterler yeniden işlenmiş ve yeni bir dosya olarak kaydedildikten sonra okutulmuştur."
+    "text": "2.5 Ön İşleme\nWeb sitesinden indirilen excel formatındaki ham veri R studio’nun okuyamayacağı türden tablolar içermektedir. Ayrıca R studio’nun okuyamadağı Türkçe karakterler ve sayı formatları yeniden işlenmiş ve yeni bir dosya olarak kaydedildikten sonra okutulmuştur."
   },
   {
     "objectID": "proje.html#keşifsel-veri-analizi",
