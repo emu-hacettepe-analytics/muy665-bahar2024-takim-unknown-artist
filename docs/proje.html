@@ -213,26 +213,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h1 data-number="2"><span class="header-section-number">2</span> Veri</h1>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>veri <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"C:/Users/Pc/Desktop/2023KONUT.xlsx"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>New names:
-• `` -&gt; `...2`</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(veri)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>veri <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"C:/Users/Pc/Desktop/2023KONUT.xlsx"</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(veri)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 81 × 2
-   `2023 KONUT SATISI`  ...2
-   &lt;chr&gt;               &lt;dbl&gt;
- 1 ADANA               16925
- 2 ADIYAMAN             3725
- 3 AFYONKARAHISAR       7717
- 4 AGRI                 2208
- 5 AMASYA               4075
- 6 ANKARA              94724
- 7 ANTALYA             52914
- 8 ARTVIN               1407
- 9 AYDIN               21872
-10 BALIKESIR           23324
+<pre><code># A tibble: 81 × 3
+   SEHIR          `2022` `2023`
+   &lt;chr&gt;           &lt;dbl&gt;  &lt;dbl&gt;
+ 1 ADANA           26908  16925
+ 2 ADIYAMAN         8198   3725
+ 3 AFYONKARAHISAR  11024   7717
+ 4 AGRI             3102   2208
+ 5 AMASYA           5339   4075
+ 6 ANKARA         126166  94724
+ 7 ANTALYA         80459  52914
+ 8 ARTVIN           2060   1407
+ 9 AYDIN           32758  21872
+10 BALIKESIR       33009  23324
 # ℹ 71 more rows</code></pre>
 </div>
 </div>
