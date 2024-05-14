@@ -19,6 +19,7 @@ veri <- read_excel("C:/Users/Pc/Desktop/2023KONUT.xlsx")
 print(veri)
 
 ```
+
 ## Veri Seti Önizleme
 
 ```{r}
@@ -43,6 +44,7 @@ summary(veri)
 colnames(veri)
 
 ```
+
 ```{r}
 library(ggplot2)
 library(reshape2)
@@ -65,7 +67,6 @@ ggplot(data = veri_long, aes(x = Yil, y = Satislar, fill = Yil)) +
   scale_fill_brewer(palette = "Pastel1") +
   scale_y_continuous(labels = comma, limits = c(NA, max(veri_long$Satislar) * 1.1))
 ```
-
 
 ```{r}
 library(ggplot2)
@@ -90,7 +91,6 @@ ggplot(data = veri_long, aes(x = Yil, y = Satislar, fill = Yil)) +
   scale_y_continuous(labels = comma, limits = c(NA, max(veri_long$Satislar) * 1.1))
 
 ```
-
 
 ## Veri Kaynağı
 
