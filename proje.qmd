@@ -104,7 +104,6 @@ ggplot(data_long, aes(x = SEHIR, y = Toplam_Satis, fill = Yil)) + geom_bar(stat 
 ```
 
 ```{r}
-# Gerekli k??t??phaneleri y??kleme
 library(readxl)
 library(dplyr)
 library(ggplot2)
@@ -125,6 +124,9 @@ data_filtered <- data %>%
 data_long <- data_filtered %>%
   pivot_longer(cols = c("2022", "2023"), names_to = "Yil", values_to = "Toplam_Satis")
 
+# Veri setini kontrol etme
+print(data_long)
+
 # Bar grafi??i ??izme
 p <- ggplot(data_long, aes(x = SEHIR, y = Toplam_Satis / 1000, fill = Yil)) +
   geom_bar(stat = "identity", position = position_dodge(width = 0.9)) +
@@ -140,8 +142,13 @@ p <- ggplot(data_long, aes(x = SEHIR, y = Toplam_Satis / 1000, fill = Yil)) +
        x = "??l",
        y = "Toplam Konut Sat?????? (bin)", fill = "Y??l")
 
+# Grafi??i g??sterme
+print(p)
+
 # Grafik boyutunu art??rarak kaydetme
 ggsave("konut_satislari_guncel_bar_mavi_sari.png", plot = p, width = 12, height = 8, units = "in")
+
+
 
 ```
 
