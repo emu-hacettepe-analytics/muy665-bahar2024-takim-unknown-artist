@@ -190,7 +190,7 @@ bolge_satis <- konut_data %>%
   group_by(BOLGE) %>%
   summarise(Satis_2022 = sum(`2022`),
             Satis_2023 = sum(`2023`)) %>%
-  mutate(Oran_2022_2023 = (( Satis_2022 / Satis_2023)-1) * 100)
+  mutate(Oran_2022_2023 = (( Satis_2023 / Satis_2022)-1) * 100)
 
 # Sonuçları görüntüleme
 print(bolge_satis)
