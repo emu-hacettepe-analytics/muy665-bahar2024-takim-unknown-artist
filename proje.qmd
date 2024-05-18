@@ -13,6 +13,13 @@ Projemizde Türkiye’de 2022 ve 2023 yıllarında gerçekleşen toplam konut sa
 
 # 2.Veri
 
+```{r}
+install.packages("readxl")
+install.packages("dplyr")
+install.packages("ggplot2")
+install.packages("tidyr")
+install.packages("scales")
+```
 
 ```{r}
 library(readxl)
