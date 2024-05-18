@@ -3,15 +3,15 @@ title: "Proje Unknown Artist"
 number-sections: true
 ---
 
-**Proje sayfamD1za hoE geldiniz.**
+**Proje sayfamıza hoş geldiniz**
 
-*T??RK??YE'N??N T??M ??LLER??NDE 2022 VE 2023 YILLARINDAK?? KONUT SATI??LARI VER??LER??N??N??N ANAL??Z??*
+Türkiye İllerinde 2022-2023 yıllarında gerçekleşen konut satışları analizi
 
-Genel BakD1E ve Kapsamı-
+# **1.Proje Genel Bakış ve Kapsamı**
 
-Projemizde TC\<rkiye'de 2023 yD1lD1nda gerC'ekleEen toplam konut satD1ElarD1nD1n illere gC6re analizi yapD1lmD1EtD1r.
+Projemizde Türkiye’de 2023 yılında gerçekleşen toplam konut satışlarının illere göre analizi yapılmıştır.
 
-# Veri
+# 2.Veri
 
 ```{r}
 install.packages("readxl")
@@ -21,7 +21,7 @@ print(veri)
 
 ```
 
-## Veri Seti Cnizleme
+## 2.1Veri Seti Önizleme
 
 ```{r}
 str(veri)
@@ -29,7 +29,7 @@ head(veri)
 
 ```
 
-## Eksik Veri KontrolC\<
+## **2.2 Eksik Veri Kontrolü**
 
 ```{r}
 sum(is.na(veri))
@@ -49,28 +49,27 @@ colnames(veri)
 # Analiz
 
 ```{r}
-# Gerekli paketleri y??kle
+
 library(readxl)
 library(ggplot2)
 
-# Veriyi y??kle
-file_path <- "2023KONUT.xlsx"  # Kendi dosya yolunuzu belirtin
+file_path <- "2023KONUT.xlsx"  
 data <- read_excel("C:/Users/Pc/Desktop/2023KONUT.xlsx")
 
-# Toplam sat????lar?? hesapla
+
 total_sales_2022 <- sum(data[[2]], na.rm = TRUE)
 total_sales_2023 <- sum(data[[3]], na.rm = TRUE)
 
-# Veriyi haz??rlama
+
 total_sales_data <- data.frame(
   Year = factor(c(2022, 2023)),
   Total_Sales = c(total_sales_2022, total_sales_2023)
 )
 
-# Histogram (bar plot) grafi??ini olu??turma ve ??izdirme
+
 ggplot(total_sales_data, aes(x = Year, y = Total_Sales, fill = Year)) +
   geom_bar(stat = "identity", color = "black") +
-  geom_text(aes(label = Total_Sales), vjust = -0.5) +  # Toplam sat???? say??lar??n?? ekleme
+  geom_text(aes(label = Total_Sales), vjust = -0.5) + 
   labs(title = "2022 ve 2023 Y??llar??ndaki Toplam Konut Sat????lar??",
        x = "Y??l",
        y = "Toplam Sat???? Say??s??") +
@@ -79,23 +78,23 @@ ggplot(total_sales_data, aes(x = Year, y = Total_Sales, fill = Year)) +
 ```
 
 ```{r}
-# Gerekli k??t??phaneleri y??kleme 
+
 install.packages("dplyr")
 install.packages("tidyr")
 library(readxl) 
 library(dplyr) 
 library(ggplot2) 
-library(tidyr) # tidyr paketini ekleyin # Veri setini do??ru yolu kullanarak okuma 
+library(tidyr) 
 data <- read_excel("C:/Users/Pc/Desktop/2023KONUT.xlsx") 
-# Depremden etkilenen illeri g??ncelleme 
+ 
 affected_cities <- c("ADANA", "ADIYAMAN", "DIYARBAKIR", "GAZIANTEP", "HATAY", "KILIS", "MALATYA", "OSMANIYE", "SANLIURFA", "KAHRAMANMARAS", "ELAZIG") 
-# Veri setini filtreleme 
+
 data_filtered <- data %>% filter(SEHIR %in% affected_cities) 
-# Veri setini d??zenleme - Uzun format 
+
 data_long <- data_filtered %>% pivot_longer(cols = c("2022", "2023"), names_to = "Yil", values_to = "Toplam_Satis") 
-# Histogram grafi??i ??izme 
+
 ggplot(data_long, aes(x = SEHIR, y = Toplam_Satis, fill = Yil)) + geom_bar(stat = "identity", position = "dodge") + theme_minimal() + theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5)) + 
-  # ??simleri dikey yapma 
+ 
   labs(title = "2022 ve 2023 Y??llar??nda Deprem Etkilenen ??llerde Konut Sat????lar??", x = "??l", y = "Toplam Konut Sat??????", fill = "Y??l")
 
 
@@ -110,31 +109,31 @@ library(ggplot2)
 library(tidyr)
 library(scales)
 
-# Veri setini do??ru yolu kullanarak okuma
+
 data <- read_excel("C:/Users/Pc/Desktop/2023KONUT.xlsx")
 
-# Deprem sonras?? g???? alan iller
+
 migration_cities <- c("ANKARA", "ISTANBUL", "KAYSERI", "KONYA", "ANTALYA", "SAMSUN", "MUGLA")
 
-# Veri setini filtreleme
+
 data_filtered <- data %>%
   filter(SEHIR %in% migration_cities)
 
-# Veri setini d??zenleme - Uzun format
+
 data_long <- data_filtered %>%
   pivot_longer(cols = c("2022", "2023"), names_to = "Yil", values_to = "Toplam_Satis")
 
-# Veri setini kontrol etme
+
 print(data_long)
 
-# Bar grafi??i ??izme
+
 p <- ggplot(data_long, aes(x = SEHIR, y = Toplam_Satis / 1000, fill = Yil)) +
   geom_bar(stat = "identity", position = position_dodge(width = 0.9)) +
   geom_text(aes(label = round(Toplam_Satis / 1000, 1)), 
             position = position_dodge(width = 0.9), 
             vjust = -0.5, 
             size = 3) +
-  scale_fill_manual(values = c("2022" = "blue", "2023" = "yellow")) +  # Renkleri mavi ve sar?? olarak de??i??tir
+  scale_fill_manual(values = c("2022" = "blue", "2023" = "yellow")) +  
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1, vjust = 0.5)) +
   scale_y_continuous(labels = comma) +
@@ -142,10 +141,8 @@ p <- ggplot(data_long, aes(x = SEHIR, y = Toplam_Satis / 1000, fill = Yil)) +
        x = "??l",
        y = "Toplam Konut Sat?????? (bin)", fill = "Y??l")
 
-# Grafi??i g??sterme
 print(p)
 
-# Grafik boyutunu art??rarak kaydetme
 ggsave("konut_satislari_guncel_bar_mavi_sari.png", plot = p, width = 12, height = 8, units = "in")
 
 
