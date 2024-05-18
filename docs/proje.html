@@ -479,7 +479,7 @@ Attaching package: 'dplyr'</code></pre>
 <span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(BOLGE) <span class="sc">%&gt;%</span></span>
 <span id="cb25-10"><a href="#cb25-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">Satis_2022 =</span> <span class="fu">sum</span>(<span class="st">`</span><span class="at">2022</span><span class="st">`</span>),</span>
 <span id="cb25-11"><a href="#cb25-11" aria-hidden="true" tabindex="-1"></a>            <span class="at">Satis_2023 =</span> <span class="fu">sum</span>(<span class="st">`</span><span class="at">2023</span><span class="st">`</span>)) <span class="sc">%&gt;%</span></span>
-<span id="cb25-12"><a href="#cb25-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Oran_2022_2023 =</span> (( Satis_2022 <span class="sc">/</span> Satis_2023)<span class="sc">-</span><span class="dv">1</span>) <span class="sc">*</span> <span class="dv">100</span>)</span>
+<span id="cb25-12"><a href="#cb25-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Oran_2022_2023 =</span> (( Satis_2023 <span class="sc">/</span> Satis_2022)<span class="sc">-</span><span class="dv">1</span>) <span class="sc">*</span> <span class="dv">100</span>)</span>
 <span id="cb25-13"><a href="#cb25-13" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb25-14"><a href="#cb25-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Sonuçları görüntüleme</span></span>
 <span id="cb25-15"><a href="#cb25-15" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(bolge_satis)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -487,13 +487,13 @@ Attaching package: 'dplyr'</code></pre>
 <pre><code># A tibble: 7 × 4
   BOLGE             Satis_2022 Satis_2023 Oran_2022_2023
   &lt;chr&gt;                  &lt;dbl&gt;      &lt;dbl&gt;          &lt;dbl&gt;
-1 AKDENIZ               206598     125016           65.3
-2 DOGU ANADOLU           70220      48285           45.4
-3 EGE                   206506     136849           50.9
-4 GUNEYDOGU ANADOLU     120746      83613           44.4
-5 IC ANADOLU            264655     197265           34.2
-6 KARADENIZ             126362      85437           47.9
-7 MARMARA               490535     317370           54.6</code></pre>
+1 AKDENIZ               206598     125016          -39.5
+2 DOGU ANADOLU           70220      48285          -31.2
+3 EGE                   206506     136849          -33.7
+4 GUNEYDOGU ANADOLU     120746      83613          -30.8
+5 IC ANADOLU            264655     197265          -25.5
+6 KARADENIZ             126362      85437          -32.4
+7 MARMARA               490535     317370          -35.3</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Grafik oluşturma</span></span>
 <span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(bolge_satis, <span class="fu">aes</span>(<span class="at">x =</span> BOLGE, <span class="at">y =</span> Oran_2022_2023, <span class="at">fill =</span> BOLGE)) <span class="sc">+</span></span>
