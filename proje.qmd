@@ -3,13 +3,13 @@ title: "Proje Unknown Artist"
 number-sections: true
 ---
 
-**Proje sayfamıza hoş geldiniz.**
+**Proje sayfamD1za hoE geldiniz.**
 
-*TÜRKİYE İLLERİNDE 2023 YILINDA GERÇEKLEŞEN TOPLAM KONUT SATIŞLARI ANALİZİ*
+*TCRKD0YE D0LLERD0NDE 2023 YILINDA GERCEKLEEEN TOPLAM KONUT SATIELARI ANALD0ZD0*
 
-# Proje Genel Bakış ve Kapsamı
+# Proje Genel BakD1E ve KapsamD1
 
-Projemizde Türkiye'de 2023 yılında gerçekleşen toplam konut satışlarının illere göre analizi yapılmıştır.
+Projemizde TC\<rkiye'de 2023 yD1lD1nda gerC'ekleEen toplam konut satD1ElarD1nD1n illere gC6re analizi yapD1lmD1EtD1r.
 
 # Veri
 
@@ -21,7 +21,7 @@ print(veri)
 
 ```
 
-## Veri Seti Önizleme
+## Veri Seti Cnizleme
 
 ```{r}
 str(veri)
@@ -29,7 +29,7 @@ head(veri)
 
 ```
 
-## Eksik Veri Kontrolü
+## Eksik Veri KontrolC\<
 
 ```{r}
 sum(is.na(veri))
@@ -46,76 +46,86 @@ colnames(veri)
 
 ```
 
+# Analiz
+
 ```{r}
+# Gerekli paketleri y??kle
+library(readxl)
 library(ggplot2)
-library(reshape2)
-library(scales)
 
-# Veri setini yeniden şekillendirme
-veri_long <- melt(veri, id.vars = "SEHIR", variable.name = "Yil", value.name = "Satislar")
+# Veriyi y??kle
+file_path <- "2023KONUT.xlsx"  # Kendi dosya yolunuzu belirtin
+data <- read_excel("C:/Users/Pc/Desktop/2023KONUT.xlsx")
 
-# Kutu grafiği çizimi, boyut ve tema ayarları ile
-ggplot(data = veri_long, aes(x = Yil, y = Satislar, fill = Yil)) +
-  geom_boxplot() +
-  labs(title = "Yıllara Göre Konut Satışlarının Kutu Grafiği",
-       x = "Yıl",
-       y = "Konut Satış Sayısı") +
-  theme_minimal() +
-  theme(text = element_text(size = 12),  # Metin boyutunu artırma
-        axis.title = element_text(size = 14),  # Eksen başlıklarının boyutunu artırma
-        axis.text = element_text(size = 12),  # Eksen metinlerinin boyutunu artırma
-        plot.title = element_text(size = 16, hjust = 0.5)) +  # Başlık boyutunu artırma ve ortalam
-  scale_fill_brewer(palette = "Pastel1") +
-  scale_y_continuous(labels = comma, limits = c(NA, max(veri_long$Satislar) * 1.1))
+# Toplam sat????lar?? hesapla
+total_sales_2022 <- sum(data[[2]], na.rm = TRUE)
+total_sales_2023 <- sum(data[[3]], na.rm = TRUE)
+
+# Veriyi haz??rlama
+total_sales_data <- data.frame(
+  Year = factor(c(2022, 2023)),
+  Total_Sales = c(total_sales_2022, total_sales_2023)
+)
+
+# Histogram (bar plot) grafi??ini olu??turma ve ??izdirme
+ggplot(total_sales_data, aes(x = Year, y = Total_Sales, fill = Year)) +
+  geom_bar(stat = "identity", color = "black") +
+  geom_text(aes(label = Total_Sales), vjust = -0.5) +  # Toplam sat???? say??lar??n?? ekleme
+  labs(title = "2022 ve 2023 Y??llar??ndaki Toplam Konut Sat????lar??",
+       x = "Y??l",
+       y = "Toplam Sat???? Say??s??") +
+  scale_fill_manual(values = c("blue", "orange")) +
+  theme_minimal()
 ```
 
 ```{r}
-library(ggplot2)
-library(reshape2)
-library(scales)
+# Gerekli k??t??phaneleri y??kleme 
+install.packages("dplyr")
+install.packages("tidyr")
+library(readxl) 
+library(dplyr) 
+library(ggplot2) 
+library(tidyr) # tidyr paketini ekleyin # Veri setini do??ru yolu kullanarak okuma 
+data <- read_excel("C:/Users/Pc/Desktop/2023KONUT.xlsx") 
+# Depremden etkilenen illeri g??ncelleme 
+affected_cities <- c("ADANA", "ADIYAMAN", "DIYARBAKIR", "GAZIANTEP", "HATAY", "KILIS", "MALATYA", "OSMANIYE", "SANLIURFA", "KAHRAMANMARAS", "ELAZIG") 
+# Veri setini filtreleme 
+data_filtered <- data %>% filter(SEHIR %in% affected_cities) 
+# Veri setini d??zenleme - Uzun format 
+data_long <- data_filtered %>% pivot_longer(cols = c("2022", "2023"), names_to = "Yil", values_to = "Toplam_Satis") 
+# Histogram grafi??i ??izme 
+ggplot(data_long, aes(x = SEHIR, y = Toplam_Satis, fill = Yil)) + geom_bar(stat = "identity", position = "dodge") + theme_minimal() + theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5)) + 
+  # ??simleri dikey yapma 
+  labs(title = "2022 ve 2023 Y??llar??nda Deprem Etkilenen ??llerde Konut Sat????lar??", x = "??l", y = "Toplam Konut Sat??????", fill = "Y??l")
 
-# Veri setini yeniden şekillendirme
-veri_long <- melt(veri, id.vars = "SEHIR", variable.name = "Yil", value.name = "Satislar")
 
-# Kutu grafiği çizimi, aykırı değerler gösterilmiyor
-ggplot(data = veri_long, aes(x = Yil, y = Satislar, fill = Yil)) +
-  geom_boxplot(outlier.shape = NA) +  # Aykırı değerleri göstermeme
-  labs(title = "Yıllara Göre Konut Satışlarının Kutu Grafiği",
-       x = "Yıl",
-       y = "Konut Satış Sayısı") +
-  theme_minimal() +
-  theme(text = element_text(size = 12),  # Metin boyutunu artırma
-        axis.title = element_text(size = 14),  # Eksen başlıklarının boyutunu artırma
-        axis.text = element_text(size = 12),  # Eksen metinlerinin boyutunu artırma
-        plot.title = element_text(size = 16, hjust = 0.5)) +  # Başlık boyutunu artırma ve ortalam
-  scale_fill_brewer(palette = "Pastel1") +
-  scale_y_continuous(labels = comma, limits = c(NA, max(veri_long$Satislar) * 1.1))
+
 
 ```
 
-## Veri Kaynağı
+## Veri KaynaDD1
 
-Projemiz için elde ettiğimiz verinin kaynağı Türkiye İstatistik Kurumu web sitesidir.
+Projemiz iC'in elde ettiDimiz verinin kaynaDD1 TC\<rkiye D0statistik Kurumu web sitesidir.
 
-Detay için bkz. "https://biruni.tuik.gov.tr/ilgosterge/?locale=tr"
+Detay iC'in bkz. "https://biruni.tuik.gov.tr/ilgosterge/?locale=tr"
 
-## Veri Hakkında Genel Bilgiler
+## Veri HakkD1nda Genel Bilgiler
 
 xxxxxx
 
 ## Tercih Sebebi
 
-Türkiye'deki konut satışlarının illere göre karşılaştırılması ve konut sirkülasyonunun net bir şekilde analiz edilebilmesine olanak tanınması, bu veri setinin tercih edilmesinde büyük önem taşımaktadır. Ayrıca 6 Şubat 2023 yılında gerçekleşen deprem felaketinin ardından zarar gören 11 ildeki konut satışlarının ne derece etkilendiğini görebilmek adına veri seti ilgi çekici bulunmuştur.
+TC\<rkiye'deki konut satD1ElarD1nD1n illere gC6re karED1laEtD1rD1lmasD1 ve konut sirkC\<lasyonunun net bir Eekilde analiz edilebilmesine olanak tanD1nmasD1, bu veri setinin tercih edilmesinde bC\<yC\<k C6nem taED1maktadD1r. AyrD1ca 6 Eubat 2023 yD1lD1nda gerC'ekleEen deprem felaketinin ardD1ndan zarar gC6ren 11 ildeki konut satD1ElarD1nD1n ne derece etkilendiDini gC6rebilmek adD1na veri seti ilgi C'ekici bulunmuEtur.
 
-## Ön İşleme
+## Cn D0Eleme
 
-R studio'nun dış kaynaktan .xlsx veya .csv formatında verileri okuyabilmesi için ilk etapta "readxl" paketi yüklenmiştir. Web sitesinden indirilen excel formatındaki ham veri R studio'nun okuyamayacağı türden tablolar içermektedir. Ayrıca R studio'nun okuyamadağı Türkçe karakterler ve sayı formatları yeniden işlenmiş ve yeni bir dosya olarak kaydedildikten sonra okutulmuştur.
+R studio'nun dD1E kaynaktan .xlsx veya .csv formatD1nda verileri okuyabilmesi iC'in ilk etapta "readxl" paketi yC\<klenmiEtir. Web sitesinden indirilen excel formatD1ndaki ham veri R studio'nun okuyamayacaDD1 tC\<rden tablolar iC'ermektedir. AyrD1ca R studio'nun okuyamadaDD1 TC\<rkC'e karakterler ve sayD1 formatlarD1 yeniden iElenmiE ve yeni bir dosya olarak kaydedildikten sonra okutulmuEtur.
 
 # Analiz
 
 xxxxxx
 
-## Keşifsel Veri Analizi
+## KeEifsel Veri Analizi
 
 xxxxxx
 
@@ -127,10 +137,10 @@ xxxxxx
 
 xxxxxx
 
-## Sonuçlar
+## SonuC'lar
 
 xxxxxx
 
-# Sonuçlar ve Ana Çıkarımlar
+# SonuC'lar ve Ana CD1karD1mlar
 
 xxxxxx
