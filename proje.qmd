@@ -178,35 +178,32 @@ ggplot(compare_change_ratio, aes(x=SEHIR, y=Change_Ratio, fill=Type)) +
 
 ```
 ```{r}
-library(readxl)
+
 library(dplyr)
+library(readxl)
 library(ggplot2)
-library(tidyr)
 
-# Veriyi okuyun
-data <- read_excel("C:/Users/Pc/Desktop/2023KONUT.xlsx")
+konut_data <- read_excel("C:/Users/Pc/Desktop/2023KONUTBOLGELER.xlsx")
 
-# Deprem etkilenen illeri belirleyin
-affected_cities <- c("ADANA", "ADIYAMAN", "DIYARBAKIR", "GAZIANTEP", "HATAY", "KILIS", "MALATYA", "OSMANIYE", "SANLIURFA", "KAHRAMANMARAS", "ELAZIG")
+# Bölgesel konut satış oranlarının hesaplanması
+bolge_satis <- konut_data %>%
+  group_by(BOLGE) %>%
+  summarise(Satis_2022 = sum(`2022`),
+            Satis_2023 = sum(`2023`)) %>%
+  mutate(Oran_2022_2023 = (( Satis_2022 / Satis_2023)-1) * 100)
 
-# Deprem etkilenen illeri filtreleyin
-data_filtered <- data %>% filter(SEHIR %in% affected_cities)
+# Sonuçları görüntüleme
+print(bolge_satis)
 
-# 2022 ve 2023 yıllarındaki konut satışlarındaki yüzdelik değişimi hesaplayın
-data_filtered <- data_filtered %>%
-  mutate(Change_Ratio = ((`2023` - `2022`) / `2022`) * 100)
-
-# Grafik oluşturun
-ggplot(data_filtered, aes(x = SEHIR, y = Change_Ratio, fill = SEHIR)) +
+# Grafik oluşturma
+ggplot(bolge_satis, aes(x = BOLGE, y = Oran_2022_2023, fill = BOLGE)) +
   geom_bar(stat = "identity") +
-  geom_text(aes(label = sprintf("%.2f%%", Change_Ratio)), 
-            vjust = -0.5, size = 3.5) +
+  labs(title = "2022-2023 Yılları Arası Bölgesel Konut Satış Oranları",
+       x = "Bolge",
+       y = "Satış Oranı (2023 / 2022)") +
   theme_minimal() +
-  theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5)) +
-  labs(title = "2022 ve 2023 Yıllarında Deprem Etkilenen İllerde Konut Satışlarındaki Yüzdelik Değişim",
-       x = "İl",
-       y = "Yüzdelik Değişim (%)",
-       fill = "İl")
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  scale_fill_discrete(name = "Bolge")
 
 ```
 
