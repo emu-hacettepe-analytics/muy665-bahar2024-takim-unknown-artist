@@ -156,7 +156,7 @@ ggsave("konut_satislari_guncel_bar_mavi_sari.png", plot = p, width = 12, height 
 
 Projemiz iC'in elde ettiDimiz verinin kaynaDD1 TC\<rkiye D0statistik Kurumu web sitesidir.
 
-Detay iC'in bkz. "https://biruni.tuik.gov.tr/ilgosterge/?locale=tr"
+Detay i??in bkz. "https://biruni.tuik.gov.tr/ilgosterge/?locale=tr"
 
 ## Veri HakkD1nda Genel Bilgiler
 
