@@ -225,26 +225,14 @@ Türkiye'deki konut satışlarının illere göre karşılaştırılması ve kon
 
 R studio'nun dış kaynaktan .xlsx veya .csv formatında verileri okuyabilmesi için ilk etapta "readxl" paketi yüklenmiştir. Web sitesinden indirilen excel formatındaki ham veri R studio'nun okuyamayacağı türden tablolar içermektedir. Ayrıca R studio'nun okuyamadığı Türkçe karakterler ve sayı formatları yeniden işlenmiş ve yeni bir dosya olarak kaydedildikten sonra okutulmuştur.
 
-# Analiz
 
-xxxxxx
 
-**Keşifsel Veri Analizi**
-
-xxxxxx
-
-**Trend Analizi**
-
-xxxxxx
-
-**Model Uydurma**
-
-xxxxxx
 
 **Sonuçlar**
 
-xxxxxx
+Yapılan analiz çalışmasına göre Türkiye genelinde pandemi veya ekonomik nedenlerden olabilecek şekilde 2023 yılında 2022 yılına göre konut satışlarında bir düşüş yaşandığı belirlenmiştir.
 
-**Sonuçlar ve Ana Çıkarımlar**
+Ayrıca 2023 depreminden etkilenen illerde ise konut satışlarındaki düşüş oranı daha büyük bir değişim göstermektedir. 
 
-xxxxxx
+Bu bağlamda depremzede insanların göç ettiği düşünülen illerde ise konut satışlarında bu göçü kaldıracak bir değişim gözlenmemiştir. Bunun sebebi ev satın almaktansa belirsizlikten kaynaklanan kira seçeneğinin seçilmesi olabilir.
+
