@@ -13,13 +13,6 @@ Projemizde Türkiye’de 2022 ve 2023 yıllarında gerçekleşen toplam konut sa
 
 # 2.Veri
 
-```{r}
-install.packages("readxl")
-install.packages("dplyr")
-install.packages("ggplot2")
-install.packages("tidyr")
-install.packages("scales")
-```
 
 ```{r}
 library(readxl)
@@ -99,6 +92,39 @@ ggplot(data_long, aes(x = SEHIR, y = Toplam_Satis, fill = Yil)) +
 ```
 
 ```{r}
+library(readxl)
+library(dplyr)
+library(ggplot2)
+library(tidyr)
+
+# Veriyi okuyun
+data <- read_excel("C:/Users/Pc/Desktop/2023KONUT.xlsx")
+
+# Deprem etkilenen illeri belirleyin
+affected_cities <- c("ADANA", "ADIYAMAN", "DIYARBAKIR", "GAZIANTEP", "HATAY", "KILIS", "MALATYA", "OSMANIYE", "SANLIURFA", "KAHRAMANMARAS", "ELAZIG")
+
+# Deprem etkilenen illeri filtreleyin
+data_filtered <- data %>% filter(SEHIR %in% affected_cities)
+
+# 2022 ve 2023 yıllarındaki konut satışlarındaki yüzdelik değişimi hesaplayın
+data_filtered <- data_filtered %>%
+  mutate(Change_Ratio = ((`2023` - `2022`) / `2022`) * 100)
+
+# Grafik oluşturun
+ggplot(data_filtered, aes(x = SEHIR, y = Change_Ratio, fill = SEHIR)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = sprintf("%.2f%%", Change_Ratio)), 
+            vjust = -0.5, size = 3.5) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5)) +
+  labs(title = "2022 ve 2023 Yıllarında Deprem Etkilenen İllerde Konut Satışlarındaki Yüzdelik Değişim",
+       x = "İl",
+       y = "Yüzdelik Değişim (%)",
+       fill = "İl")
+
+```
+
+```{r}
 library(readxl) 
 library(dplyr) 
 library(ggplot2) 
@@ -120,6 +146,68 @@ p <- ggplot(data_long, aes(x = SEHIR, y = Toplam_Satis / 1000, fill = Yil)) + ge
 print(p)
 
 ggsave("konut_satislari_guncel_bar_mavi_sari.png", plot = p, width = 12, height = 8, units = "in")
+```
+
+
+```{r}
+library(ggplot2)
+library(readxl)
+
+
+
+data <- read_excel("C:/Users/Pc/Desktop/2023KONUT.xlsx")
+
+data$Change_Ratio <- ((data$`2023` - data$`2022`) / (data$`2023` + data$`2022`)) * 100
+
+max_change_ratio <- data[which.max(data$Change_Ratio), ]
+min_change_ratio <- data[which.min(data$Change_Ratio), ]
+
+# Veriyi birleştirin
+compare_change_ratio <- rbind(max_change_ratio, min_change_ratio)
+compare_change_ratio$Type <- c("Max Change Ratio", "Min Change Ratio")
+
+# Grafik oluşturun
+ggplot(compare_change_ratio, aes(x=SEHIR, y=Change_Ratio, fill=Type)) + 
+  geom_bar(stat="identity", position=position_dodge()) +
+  geom_text(aes(label=sprintf("%.2f%%", Change_Ratio)), 
+            vjust=-0.5, position=position_dodge(0.9), size=3.5) +
+  labs(title="2022 ve 2023 Yılları Arasında En Büyük ve En Küçük Değişim Oranına Sahip İller",
+       x="İl",
+       y="Değişim Oranı (%)") +
+  theme_minimal()
+
+```
+```{r}
+library(readxl)
+library(dplyr)
+library(ggplot2)
+library(tidyr)
+
+# Veriyi okuyun
+data <- read_excel("C:/Users/Pc/Desktop/2023KONUT.xlsx")
+
+# Deprem etkilenen illeri belirleyin
+affected_cities <- c("ADANA", "ADIYAMAN", "DIYARBAKIR", "GAZIANTEP", "HATAY", "KILIS", "MALATYA", "OSMANIYE", "SANLIURFA", "KAHRAMANMARAS", "ELAZIG")
+
+# Deprem etkilenen illeri filtreleyin
+data_filtered <- data %>% filter(SEHIR %in% affected_cities)
+
+# 2022 ve 2023 yıllarındaki konut satışlarındaki yüzdelik değişimi hesaplayın
+data_filtered <- data_filtered %>%
+  mutate(Change_Ratio = ((`2023` - `2022`) / `2022`) * 100)
+
+# Grafik oluşturun
+ggplot(data_filtered, aes(x = SEHIR, y = Change_Ratio, fill = SEHIR)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = sprintf("%.2f%%", Change_Ratio)), 
+            vjust = -0.5, size = 3.5) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5)) +
+  labs(title = "2022 ve 2023 Yıllarında Deprem Etkilenen İllerde Konut Satışlarındaki Yüzdelik Değişim",
+       x = "İl",
+       y = "Yüzdelik Değişim (%)",
+       fill = "İl")
+
 ```
 
 ## Veri Kaynağı
