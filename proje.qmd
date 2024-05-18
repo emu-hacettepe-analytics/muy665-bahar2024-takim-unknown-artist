@@ -5,9 +5,9 @@ number-sections: true
 
 **Proje sayfamD1za hoE geldiniz.**
 
-*TCRKD0YE D0LLERD0NDE 2023 YILINDA GERCEKLEEEN TOPLAM KONUT SATIELARI ANALD0ZD0*
+*T??RK??YE'N??N T??M ??LLER??NDE 2022 VE 2023 YILLARINDAK?? KONUT SATI??LARI VER??LER??N??N??N ANAL??Z??*
 
-# Proje Genel BakD1E ve KapsamD1
+Genel BakD1E ve KapsamD1
 
 Projemizde TC\<rkiye'de 2023 yD1lD1nda gerC'ekleEen toplam konut satD1ElarD1nD1n illere gC6re analizi yapD1lmD1EtD1r.
 
