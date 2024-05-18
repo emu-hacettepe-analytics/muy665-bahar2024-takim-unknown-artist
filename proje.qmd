@@ -13,13 +13,14 @@ Projemizde Türkiye’de 2022 ve 2023 yıllarında gerçekleşen toplam konut sa
 
 # 2.Veri
 
+
 ```{r}
-install.packages("readxl")
 library(readxl)
 veri <- read_excel("C:/Users/Pc/Desktop/2023KONUT.xlsx")
 print(veri)
 
 ```
+
 
 ## 2.1 Veri Seti Önizleme
 
@@ -64,8 +65,6 @@ ggplot(total_sales_data, aes(x = Year, y = Total_Sales, fill = Year)) + geom_bar
 ```
 
 ```{r}
-{install.packages("dplyr")}
-install.packages("tidyr")
 library(readxl)
 library(dplyr)
 library(ggplot2)

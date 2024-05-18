@@ -247,7 +247,7 @@
     "href": "proje.html",
     "title": "Proje Unknown Artist",
     "section": "",
-    "text": "Proje sayfamıza hoş geldiniz.\nTÜRKİYE İLLERİNDE 2023 YILINDA GERÇEKLEŞEN TOPLAM KONUT SATIŞLARI ANALİZİ"
+    "text": "Proje sayfamıza hoş geldiniz\nTürkiye İllerinde 2022-2023 yıllarında gerçekleşen konut satışları analizi"
   },
   {
     "objectID": "proje.html#data-source",
@@ -327,29 +327,29 @@
     "objectID": "proje.html#veri-kaynağı",
     "href": "proje.html#veri-kaynağı",
     "title": "Proje Unknown Artist",
-    "section": "2.3 Veri Kaynağı",
-    "text": "2.3 Veri Kaynağı\nProjemiz için elde ettiğimiz verinin kaynağı Türkiye İstatistik Kurumu web sitesidir.\nDetay için bkz. “https://biruni.tuik.gov.tr/ilgosterge/?locale=tr”"
+    "section": "3.1 Veri Kaynağı",
+    "text": "3.1 Veri Kaynağı\nProjemiz için elde ettiğimiz verinin kaynağı Türkiye İstatistik Kurumu web sitesidir.\nDetay için bkz. “https://biruni.tuik.gov.tr/ilgosterge/?locale=tr”"
   },
   {
     "objectID": "proje.html#veri-hakkında-genel-bilgiler",
     "href": "proje.html#veri-hakkında-genel-bilgiler",
     "title": "Proje Unknown Artist",
-    "section": "2.4 Veri Hakkında Genel Bilgiler",
-    "text": "2.4 Veri Hakkında Genel Bilgiler\nxxxxxx"
+    "section": "3.2 Veri Hakkında Genel Bilgiler",
+    "text": "3.2 Veri Hakkında Genel Bilgiler\nxxxxxx"
   },
   {
     "objectID": "proje.html#tercih-sebebi",
     "href": "proje.html#tercih-sebebi",
     "title": "Proje Unknown Artist",
-    "section": "2.5 Tercih Sebebi",
-    "text": "2.5 Tercih Sebebi\nTürkiye’deki konut satışlarının illere göre karşılaştırılması ve konut sirkülasyonunun net bir şekilde analiz edilebilmesine olanak tanınması, bu veri setinin tercih edilmesinde büyük önem taşımaktadır. Ayrıca 6 Şubat 2023 yılında gerçekleşen deprem felaketinin ardından zarar gören 11 ildeki konut satışlarının ne derece etkilendiğini görebilmek adına veri seti ilgi çekici bulunmuştur."
+    "section": "3.3 Tercih Sebebi",
+    "text": "3.3 Tercih Sebebi\nTürkiye’deki konut satışlarının illere göre karşılaştırılması ve konut sirkülasyonunun net bir şekilde analiz edilebilmesine olanak tanınması, bu veri setinin tercih edilmesinde büyük önem taşımaktadır. Ayrıca 6 Şubat 2023 yılında gerçekleşen deprem felaketinin ardından zarar gören 11 ildeki konut satışlarının ne derece etkilendiğini görebilmek adına veri seti ilgi çekici bulunmuştur."
   },
   {
     "objectID": "proje.html#ön-işleme",
     "href": "proje.html#ön-işleme",
     "title": "Proje Unknown Artist",
-    "section": "2.6 Ön İşleme",
-    "text": "2.6 Ön İşleme\nR studio’nun dış kaynaktan .xlsx veya .csv formatında verileri okuyabilmesi için ilk etapta “readxl” paketi yüklenmiştir. Web sitesinden indirilen excel formatındaki ham veri R studio’nun okuyamayacağı türden tablolar içermektedir. Ayrıca R studio’nun okuyamadağı Türkçe karakterler ve sayı formatları yeniden işlenmiş ve yeni bir dosya olarak kaydedildikten sonra okutulmuştur."
+    "section": "3.4 Ön İşleme",
+    "text": "3.4 Ön İşleme\nR studio’nun dış kaynaktan .xlsx veya .csv formatında verileri okuyabilmesi için ilk etapta “readxl” paketi yüklenmiştir. Web sitesinden indirilen excel formatındaki ham veri R studio’nun okuyamayacağı türden tablolar içermektedir. Ayrıca R studio’nun okuyamadığı Türkçe karakterler ve sayı formatları yeniden işlenmiş ve yeni bir dosya olarak kaydedildikten sonra okutulmuştur."
   },
   {
     "objectID": "proje.html#keşifsel-veri-analizi",
@@ -710,14 +710,14 @@
     "objectID": "proje.html#veri-seti-önizleme",
     "href": "proje.html#veri-seti-önizleme",
     "title": "Proje Unknown Artist",
-    "section": "2.1 Veri Seti Önizleme",
-    "text": "2.1 Veri Seti Önizleme\n\nstr(veri)\n\ntibble [81 × 3] (S3: tbl_df/tbl/data.frame)\n $ SEHIR: chr [1:81] \"ADANA\" \"ADIYAMAN\" \"AFYONKARAHISAR\" \"AGRI\" ...\n $ 2022 : num [1:81] 26908 8198 11024 3102 5339 ...\n $ 2023 : num [1:81] 16925 3725 7717 2208 4075 ...\n\nhead(veri)\n\n# A tibble: 6 × 3\n  SEHIR          `2022` `2023`\n  &lt;chr&gt;           &lt;dbl&gt;  &lt;dbl&gt;\n1 ADANA           26908  16925\n2 ADIYAMAN         8198   3725\n3 AFYONKARAHISAR  11024   7717\n4 AGRI             3102   2208\n5 AMASYA           5339   4075\n6 ANKARA         126166  94724"
+    "section": "2.1 2.1 Veri Seti Önizleme",
+    "text": "2.1 2.1 Veri Seti Önizleme\n\nstr(veri)\n\ntibble [81 × 3] (S3: tbl_df/tbl/data.frame)\n $ SEHIR: chr [1:81] \"ADANA\" \"ADIYAMAN\" \"AFYONKARAHISAR\" \"AGRI\" ...\n $ 2022 : num [1:81] 26908 8198 11024 3102 5339 ...\n $ 2023 : num [1:81] 16925 3725 7717 2208 4075 ...\n\nhead(veri)\n\n# A tibble: 6 × 3\n  SEHIR          `2022` `2023`\n  &lt;chr&gt;           &lt;dbl&gt;  &lt;dbl&gt;\n1 ADANA           26908  16925\n2 ADIYAMAN         8198   3725\n3 AFYONKARAHISAR  11024   7717\n4 AGRI             3102   2208\n5 AMASYA           5339   4075\n6 ANKARA         126166  94724"
   },
   {
     "objectID": "proje.html#eksik-veri-kontrolü",
     "href": "proje.html#eksik-veri-kontrolü",
     "title": "Proje Unknown Artist",
-    "section": "2.2 Eksik Veri Kontrolü",
-    "text": "2.2 Eksik Veri Kontrolü\n\nsum(is.na(veri))\n\n[1] 0\n\n\n\nsummary(veri)\n\n    SEHIR                2022             2023       \n Length:81          Min.   :   468   Min.   :   290  \n Class :character   1st Qu.:  4044   1st Qu.:  2568  \n Mode  :character   Median :  8177   Median :  5556  \n                    Mean   : 18341   Mean   : 12270  \n                    3rd Qu.: 21789   3rd Qu.: 14506  \n                    Max.   :259654   Max.   :159838  \n\n\n\ncolnames(veri)\n\n[1] \"SEHIR\" \"2022\"  \"2023\" \n\n\n\nlibrary(ggplot2)\nlibrary(reshape2)\nlibrary(scales)\n\n# Veri setini yeniden şekillendirme\nveri_long &lt;- melt(veri, id.vars = \"SEHIR\", variable.name = \"Yil\", value.name = \"Satislar\")\n\n# Kutu grafiği çizimi, boyut ve tema ayarları ile\nggplot(data = veri_long, aes(x = Yil, y = Satislar, fill = Yil)) +\n  geom_boxplot() +\n  labs(title = \"Yıllara Göre Konut Satışlarının Kutu Grafiği\",\n       x = \"Yıl\",\n       y = \"Konut Satış Sayısı\") +\n  theme_minimal() +\n  theme(text = element_text(size = 12),  # Metin boyutunu artırma\n        axis.title = element_text(size = 14),  # Eksen başlıklarının boyutunu artırma\n        axis.text = element_text(size = 12),  # Eksen metinlerinin boyutunu artırma\n        plot.title = element_text(size = 16, hjust = 0.5)) +  # Başlık boyutunu artırma ve ortalam\n  scale_fill_brewer(palette = \"Pastel1\") +\n  scale_y_continuous(labels = comma, limits = c(NA, max(veri_long$Satislar) * 1.1))\n\n\n\n\n\n\n\n\n\nlibrary(ggplot2)\nlibrary(reshape2)\nlibrary(scales)\n\n# Veri setini yeniden şekillendirme\nveri_long &lt;- melt(veri, id.vars = \"SEHIR\", variable.name = \"Yil\", value.name = \"Satislar\")\n\n# Kutu grafiği çizimi, aykırı değerler gösterilmiyor\nggplot(data = veri_long, aes(x = Yil, y = Satislar, fill = Yil)) +\n  geom_boxplot(outlier.shape = NA) +  # Aykırı değerleri göstermeme\n  labs(title = \"Yıllara Göre Konut Satışlarının Kutu Grafiği\",\n       x = \"Yıl\",\n       y = \"Konut Satış Sayısı\") +\n  theme_minimal() +\n  theme(text = element_text(size = 12),  # Metin boyutunu artırma\n        axis.title = element_text(size = 14),  # Eksen başlıklarının boyutunu artırma\n        axis.text = element_text(size = 12),  # Eksen metinlerinin boyutunu artırma\n        plot.title = element_text(size = 16, hjust = 0.5)) +  # Başlık boyutunu artırma ve ortalam\n  scale_fill_brewer(palette = \"Pastel1\") +\n  scale_y_continuous(labels = comma, limits = c(NA, max(veri_long$Satislar) * 1.1))"
+    "section": "2.2 2.2 Eksik Veri Kontrolü",
+    "text": "2.2 2.2 Eksik Veri Kontrolü\n\nsum(is.na(veri))\n\n[1] 0\n\n\n\nsummary(veri)\n\n    SEHIR                2022             2023       \n Length:81          Min.   :   468   Min.   :   290  \n Class :character   1st Qu.:  4044   1st Qu.:  2568  \n Mode  :character   Median :  8177   Median :  5556  \n                    Mean   : 18341   Mean   : 12270  \n                    3rd Qu.: 21789   3rd Qu.: 14506  \n                    Max.   :259654   Max.   :159838  \n\n\n\ncolnames(veri)\n\n[1] \"SEHIR\" \"2022\"  \"2023\""
   }
 ]
