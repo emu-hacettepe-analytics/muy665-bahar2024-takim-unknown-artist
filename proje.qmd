@@ -7,7 +7,7 @@ number-sections: true
 
 *T??RK??YE'N??N T??M ??LLER??NDE 2022 VE 2023 YILLARINDAK?? KONUT SATI??LARI VER??LER??N??N??N ANAL??Z??*
 
-Genel BakD1E ve KapsamD1
+Genel BakD1E ve Kapsamı-
 
 Projemizde TC\<rkiye'de 2023 yD1lD1nda gerC'ekleEen toplam konut satD1ElarD1nD1n illere gC6re analizi yapD1lmD1EtD1r.
 
