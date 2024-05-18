@@ -48,31 +48,21 @@ colnames(veri)
 
 # Analiz
 
-```{library(readxl)}
-library(ggplot2)
+```{r} 
+{library(readxl)} library(ggplot2)
 
-file_path <- "C:/Users/Pc/Desktop/2023KONUT.xlsx"
-data <- read_excel(file_path)
+file_path \<- "C:/Users/Pc/Desktop/2023KONUT.xlsx" data \<- read_excel(file_path)
 
-total_sales_2022 <- sum(data[[2]], na.rm = TRUE)
-total_sales_2023 <- sum(data[[3]], na.rm = TRUE)
+total_sales_2022 \<- sum(data\[\[2\]\], na.rm = TRUE) total_sales_2023 \<- sum(data\[\[3\]\], na.rm = TRUE)
 
-total_sales_data <- data.frame(
-  Year = factor(c(2022, 2023)),
-  Total_Sales = c(total_sales_2022, total_sales_2023)
-)
+total_sales_data \<- data.frame( Year = factor(c(2022, 2023)), Total_Sales = c(total_sales_2022, total_sales_2023) )
 
-ggplot(total_sales_data, aes(x = Year, y = Total_Sales, fill = Year)) +
-  geom_bar(stat = "identity", color = "black") +
-  geom_text(aes(label = Total_Sales), vjust = -0.5) + 
-  labs(title = "2022 ve 2023 Yıllarındaki Toplam Konut Satışları",
-       x = "Yıl",
-       y = "Toplam Satış Sayısı") +
-  scale_fill_manual(values = c("blue", "orange")) +
-  theme_minimal()
+ggplot(total_sales_data, aes(x = Year, y = Total_Sales, fill = Year)) + geom_bar(stat = "identity", color = "black") + geom_text(aes(label = Total_Sales), vjust = -0.5) + labs(title = "2022 ve 2023 Yıllarındaki Toplam Konut Satışları", x = "Yıl", y = "Toplam Satış Sayısı") + scale_fill_manual(values = c("blue", "orange")) + theme_minimal()
 ```
+         
 
-```{install.packages("dplyr")}
+```{r}
+{install.packages("dplyr")}
 install.packages("tidyr")
 library(readxl)
 library(dplyr)
@@ -98,41 +88,22 @@ ggplot(data_long, aes(x = SEHIR, y = Toplam_Satis, fill = Yil)) +
 
 
 
-
 ```
 
-```{library(readxl)}
-library(dplyr)
-library(ggplot2)
-library(tidyr)
-library(scales)
+```{r}
+{library(readxl)} library(dplyr) library(ggplot2) library(tidyr) library(scales)
 
-data <- read_excel("C:/Users/Pc/Desktop/2023KONUT.xlsx")
+data \<- read_excel("C:/Users/Pc/Desktop/2023KONUT.xlsx")
 
-migration_cities <- c("ANKARA", "ISTANBUL", "KAYSERI", "KONYA", "ANTALYA", "SAMSUN", "MUGLA")
+migration_cities \<- c("ANKARA", "ISTANBUL", "KAYSERI", "KONYA", "ANTALYA", "SAMSUN", "MUGLA")
 
-data_filtered <- data %>%
-  filter(SEHIR %in% migration_cities)
+data_filtered \<- data %\>% filter(SEHIR %in% migration_cities)
 
-data_long <- data_filtered %>%
-  pivot_longer(cols = c("2022", "2023"), names_to = "Yil", values_to = "Toplam_Satis")
+data_long \<- data_filtered %\>% pivot_longer(cols = c("2022", "2023"), names_to = "Yil", values_to = "Toplam_Satis")
 
 print(data_long)
 
-p <- ggplot(data_long, aes(x = SEHIR, y = Toplam_Satis / 1000, fill = Yil)) +
-  geom_bar(stat = "identity", position = position_dodge(width = 0.9)) +
-  geom_text(aes(label = round(Toplam_Satis / 1000, 1)), 
-            position = position_dodge(width = 0.9), 
-            vjust = -0.5, 
-            size = 3) +
-  scale_fill_manual(values = c("2022" = "blue", "2023" = "yellow")) +
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1, vjust = 0.5)) +
-  scale_y_continuous(labels = comma) +
-  labs(title = "Deprem Sonrası Göç Alan İllerde Konut Satışları",
-       x = "İl",
-       y = "Toplam Konut Satışı (bin)",
-       fill = "Yıl")
+p \<- ggplot(data_long, aes(x = SEHIR, y = Toplam_Satis / 1000, fill = Yil)) + geom_bar(stat = "identity", position = position_dodge(width = 0.9)) + geom_text(aes(label = round(Toplam_Satis / 1000, 1)), position = position_dodge(width = 0.9), vjust = -0.5, size = 3) + scale_fill_manual(values = c("2022" = "blue", "2023" = "yellow")) + theme_minimal() + theme(axis.text.x = element_text(angle = 45, hjust = 1, vjust = 0.5)) + scale_y_continuous(labels = comma) + labs(title = "Deprem Sonrası Göç Alan İllerde Konut Satışları", x = "İl", y = "Toplam Konut Satışı (bin)", fill = "Yıl")
 
 print(p)
 
