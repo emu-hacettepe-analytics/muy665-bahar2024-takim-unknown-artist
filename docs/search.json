@@ -395,14 +395,22 @@
     "href": "portfolyo/calisma2.html#a",
     "title": "Çalışma 2",
     "section": "(a)",
-    "text": "(a)\n\n1 + 1\n\n[1] 2"
+    "text": "(a)\n\n1 + 1\n\n[1] 2",
+    "crumbs": [
+      "Porfolyo",
+      "Çalışma 2"
+    ]
   },
   {
     "objectID": "portfolyo/calisma2.html#b",
     "href": "portfolyo/calisma2.html#b",
     "title": "Çalışma 2",
     "section": "(b)",
-    "text": "(b)"
+    "text": "(b)",
+    "crumbs": [
+      "Porfolyo",
+      "Çalışma 2"
+    ]
   },
   {
     "objectID": "portfolyo/calisma1.html#b",

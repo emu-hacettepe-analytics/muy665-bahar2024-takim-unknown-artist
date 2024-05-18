@@ -1,11 +1,8 @@
 ---
-title: "CalD1Ema 2"
+title: "Çalışma 2"
 ---
 
 \
-(AEaDD1dakiler C6rnek olarak verilmiEtir.)
-
-Bu C'alD1Emada 3 gC6revimiz var. Bu gC6revler..... Bunlara sD1rayla aEaDD1da cevap arD1yoruz.
 
 ## (a)
 
