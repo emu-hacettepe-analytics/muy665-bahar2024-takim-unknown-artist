@@ -103,6 +103,48 @@ ggplot(data_long, aes(x = SEHIR, y = Toplam_Satis, fill = Yil)) + geom_bar(stat 
 
 ```
 
+```{r}
+# Gerekli k??t??phaneleri y??kleme
+library(readxl)
+library(dplyr)
+library(ggplot2)
+library(tidyr)
+library(scales)
+
+# Veri setini do??ru yolu kullanarak okuma
+data <- read_excel("C:/Users/Pc/Desktop/2023KONUT.xlsx")
+
+# Deprem sonras?? g???? alan iller
+migration_cities <- c("ANKARA", "ISTANBUL", "KAYSERI", "KONYA", "ANTALYA", "SAMSUN", "MUGLA")
+
+# Veri setini filtreleme
+data_filtered <- data %>%
+  filter(SEHIR %in% migration_cities)
+
+# Veri setini d??zenleme - Uzun format
+data_long <- data_filtered %>%
+  pivot_longer(cols = c("2022", "2023"), names_to = "Yil", values_to = "Toplam_Satis")
+
+# Bar grafi??i ??izme
+p <- ggplot(data_long, aes(x = SEHIR, y = Toplam_Satis / 1000, fill = Yil)) +
+  geom_bar(stat = "identity", position = position_dodge(width = 0.9)) +
+  geom_text(aes(label = round(Toplam_Satis / 1000, 1)), 
+            position = position_dodge(width = 0.9), 
+            vjust = -0.5, 
+            size = 3) +
+  scale_fill_manual(values = c("2022" = "blue", "2023" = "yellow")) +  # Renkleri mavi ve sar?? olarak de??i??tir
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, vjust = 0.5)) +
+  scale_y_continuous(labels = comma) +
+  labs(title = "Deprem Sonras?? G???? Alan ??llerde Konut Sat????lar??",
+       x = "??l",
+       y = "Toplam Konut Sat?????? (bin)", fill = "Y??l")
+
+# Grafik boyutunu art??rarak kaydetme
+ggsave("konut_satislari_guncel_bar_mavi_sari.png", plot = p, width = 12, height = 8, units = "in")
+
+```
+
 ## Veri KaynaDD1
 
 Projemiz iC'in elde ettiDimiz verinin kaynaDD1 TC\<rkiye D0statistik Kurumu web sitesidir.

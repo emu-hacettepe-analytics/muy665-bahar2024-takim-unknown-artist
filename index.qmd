@@ -5,9 +5,9 @@ sidebar: false
 
 ![](images/clipboard-3803838625.png){width="273"}
 
-MUY660-İş Analitiği dersi takım sayfamıza hoş geldiniz.
+MUY660-D0E AnalitiDi dersi takD1m sayfamD1za hoE geldiniz.
 
-## Takım
+## TakD1m
 
 1.  [Utku ORUN](/takim/utkuorun.qmd)
 
@@ -15,16 +15,16 @@ MUY660-İş Analitiği dersi takım sayfamıza hoş geldiniz.
 
 3.  [Serkan MUTLU](/takim/serkanmutlu.qmd)
 
-## Proje Adı
+## Proje AdD1
 
-MUY660-İş Analitiği iyileştirme çalışmaları (örnek)
+MUY660-D0E AnalitiDi iyileEtirme C'alD1EmalarD1 (C6rnek)
 
 ## Proje Konusu
 
-Örnek: Bu projede MUY660-İş Analitiği ders içeriğinin analitik yaklaşımlarla iyileştirilmesini hedefledik. Bu doğrultuda tüm üniversitelerdeki benzer derslerin verisini toplayarak bir veri seti oluşturduk Analiz için ........ yöntemleri kullanarak, ....... çalışmaları yaptık Sonuç olarak, MUY660-İş Analitiği dersinin dünyadaki tüm derslerden daha iyi olduğunu ve bu dersi aldığımız için çok mutlu olduğumuzu tespit ettik.
+Crnek: Bu projede MUY660-D0E AnalitiDi ders iC'eriDinin analitik yaklaED1mlarla iyileEtirilmesini hedefledik. Bu doDrultuda tC\<m C\<niversitelerdeki benzer derslerin verisini toplayarak bir veri seti oluEturduk Analiz iC'in ........ yC6ntemleri kullanarak, ....... C'alD1EmalarD1 yaptD1k SonuC' olarak, MUY660-D0E AnalitiDi dersinin dC\<nyadaki tC\<m derslerden daha iyi olduDunu ve bu dersi aldD1DD1mD1z iC'in C'ok mutlu olduDumuzu tespit ettik.
 
-## Veri Seti Hakkında Özet Bilgi
+## Veri Seti HakkD1nda Czet Bilgi
 
-## Sonuçlar
+## SonuC'lar
 
-Burada key takeways verilmelidir. En az 3 en fazla 5 madde ile çarpıcı sonuçlar sunulmalıdır.
+Burada key takeways verilmelidir. En az 3 en fazla 5 madde ile C'arpD1cD1 sonuC'lar sunulmalD1dD1r.
