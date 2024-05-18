@@ -48,7 +48,7 @@ colnames(veri)
 
 # Analiz
 
-```{r} 
+```{r}
 library(readxl) 
 library(ggplot2)
 
@@ -62,7 +62,6 @@ total_sales_data <- data.frame( Year = factor(c(2022, 2023)), Total_Sales = c(to
 
 ggplot(total_sales_data, aes(x = Year, y = Total_Sales, fill = Year)) + geom_bar(stat = "identity", color = "black") + geom_text(aes(label = Total_Sales), vjust = -0.5) + labs(title = "2022 ve 2023 Yıllarındaki Toplam Konut Satışları", x = "Yıl", y = "Toplam Satış Sayısı") + scale_fill_manual(values = c("blue", "orange")) + theme_minimal()
 ```
-         
 
 ```{r}
 {install.packages("dplyr")}
