@@ -11,8 +11,9 @@ Türkiye İllerinde 2022-2023 yıllarında gerçekleşen konut satışları anal
 
 Projemizde Türkiye’de 2022 ve 2023 yıllarında gerçekleşen toplam konut satışlarının illere göre analizi yapılmıştır.
 
-# 2.Veri
+<https://www.youtube.com/watch?v=2faGNqa3qok>
 
+# 2.Veri
 
 ```{r}
 library(readxl)
@@ -20,7 +21,6 @@ veri <- read_excel("C:/Users/Pc/Desktop/2023KONUT.xlsx")
 print(veri)
 
 ```
-
 
 ## 2.1 Veri Seti Önizleme
 
@@ -148,7 +148,6 @@ print(p)
 ggsave("konut_satislari_guncel_bar_mavi_sari.png", plot = p, width = 12, height = 8, units = "in")
 ```
 
-
 ```{r}
 library(ggplot2)
 library(readxl)
@@ -177,6 +176,7 @@ ggplot(compare_change_ratio, aes(x=SEHIR, y=Change_Ratio, fill=Type)) +
   theme_minimal()
 
 ```
+
 ```{r}
 
 library(dplyr)
@@ -213,10 +213,6 @@ Projemiz için elde ettiğimiz verinin kaynağı Türkiye İstatistik Kurumu web
 
 Detay için bkz. ["https://biruni.tuik.gov.tr/ilgosterge/?locale=tr"](https://biruni.tuik.gov.tr/ilgosterge/?locale=tr)
 
-## Veri Hakkında Genel Bilgiler
-
-xxxxxx
-
 ## Tercih Sebebi
 
 Türkiye'deki konut satışlarının illere göre karşılaştırılması ve konut sirkülasyonunun net bir şekilde analiz edilebilmesine olanak tanınması, bu veri setinin tercih edilmesinde büyük önem taşımaktadır. Ayrıca 6 Şubat 2023 yılında gerçekleşen deprem felaketinin ardından zarar gören 11 ildeki konut satışlarının ne derece etkilendiğini görebilmek adına veri seti ilgi çekici bulunmuştur.
@@ -225,14 +221,10 @@ Türkiye'deki konut satışlarının illere göre karşılaştırılması ve kon
 
 R studio'nun dış kaynaktan .xlsx veya .csv formatında verileri okuyabilmesi için ilk etapta "readxl" paketi yüklenmiştir. Web sitesinden indirilen excel formatındaki ham veri R studio'nun okuyamayacağı türden tablolar içermektedir. Ayrıca R studio'nun okuyamadığı Türkçe karakterler ve sayı formatları yeniden işlenmiş ve yeni bir dosya olarak kaydedildikten sonra okutulmuştur.
 
-
-
-
 **Sonuçlar**
 
 Yapılan analiz çalışmasına göre Türkiye genelinde pandemi veya ekonomik nedenlerden olabilecek şekilde 2023 yılında 2022 yılına göre konut satışlarında bir düşüş yaşandığı belirlenmiştir.
 
-Ayrıca 2023 depreminden etkilenen illerde ise konut satışlarındaki düşüş oranı daha büyük bir değişim göstermektedir. 
+Ayrıca 2023 depreminden etkilenen illerde ise konut satışlarındaki düşüş oranı daha büyük bir değişim göstermektedir.
 
 Bu bağlamda depremzede insanların göç ettiği düşünülen illerde ise konut satışlarında bu göçü kaldıracak bir değişim gözlenmemiştir. Bunun sebebi ev satın almaktansa belirsizlikten kaynaklanan kira seçeneğinin seçilmesi olabilir.
-

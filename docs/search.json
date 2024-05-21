@@ -341,15 +341,15 @@
     "objectID": "proje.html#tercih-sebebi",
     "href": "proje.html#tercih-sebebi",
     "title": "Proje Unknown Artist",
-    "section": "3.3 Tercih Sebebi",
-    "text": "3.3 Tercih Sebebi\nTürkiye’deki konut satışlarının illere göre karşılaştırılması ve konut sirkülasyonunun net bir şekilde analiz edilebilmesine olanak tanınması, bu veri setinin tercih edilmesinde büyük önem taşımaktadır. Ayrıca 6 Şubat 2023 yılında gerçekleşen deprem felaketinin ardından zarar gören 11 ildeki konut satışlarının ne derece etkilendiğini görebilmek adına veri seti ilgi çekici bulunmuştur."
+    "section": "3.2 Tercih Sebebi",
+    "text": "3.2 Tercih Sebebi\nTürkiye’deki konut satışlarının illere göre karşılaştırılması ve konut sirkülasyonunun net bir şekilde analiz edilebilmesine olanak tanınması, bu veri setinin tercih edilmesinde büyük önem taşımaktadır. Ayrıca 6 Şubat 2023 yılında gerçekleşen deprem felaketinin ardından zarar gören 11 ildeki konut satışlarının ne derece etkilendiğini görebilmek adına veri seti ilgi çekici bulunmuştur."
   },
   {
     "objectID": "proje.html#ön-işleme",
     "href": "proje.html#ön-işleme",
     "title": "Proje Unknown Artist",
-    "section": "3.4 Ön İşleme",
-    "text": "3.4 Ön İşleme\nR studio’nun dış kaynaktan .xlsx veya .csv formatında verileri okuyabilmesi için ilk etapta “readxl” paketi yüklenmiştir. Web sitesinden indirilen excel formatındaki ham veri R studio’nun okuyamayacağı türden tablolar içermektedir. Ayrıca R studio’nun okuyamadığı Türkçe karakterler ve sayı formatları yeniden işlenmiş ve yeni bir dosya olarak kaydedildikten sonra okutulmuştur.\nSonuçlar\nYapılan analiz çalışmasına göre Türkiye genelinde pandemi veya ekonomik nedenlerden olabilecek şekilde 2023 yılında 2022 yılına göre konut satışlarında bir düşüş yaşandığı belirlenmiştir.\nAyrıca 2023 depreminden etkilenen illerde ise konut satışlarındaki düşüş oranı daha büyük bir değişim göstermektedir.\nBu bağlamda depremzede insanların göç ettiği düşünülen illerde ise konut satışlarında bu göçü kaldıracak bir değişim gözlenmemiştir. Bunun sebebi ev satın almaktansa belirsizlikten kaynaklanan kira seçeneğinin seçilmesi olabilir."
+    "section": "3.3 Ön İşleme",
+    "text": "3.3 Ön İşleme\nR studio’nun dış kaynaktan .xlsx veya .csv formatında verileri okuyabilmesi için ilk etapta “readxl” paketi yüklenmiştir. Web sitesinden indirilen excel formatındaki ham veri R studio’nun okuyamayacağı türden tablolar içermektedir. Ayrıca R studio’nun okuyamadığı Türkçe karakterler ve sayı formatları yeniden işlenmiş ve yeni bir dosya olarak kaydedildikten sonra okutulmuştur.\nSonuçlar\nYapılan analiz çalışmasına göre Türkiye genelinde pandemi veya ekonomik nedenlerden olabilecek şekilde 2023 yılında 2022 yılına göre konut satışlarında bir düşüş yaşandığı belirlenmiştir.\nAyrıca 2023 depreminden etkilenen illerde ise konut satışlarındaki düşüş oranı daha büyük bir değişim göstermektedir.\nBu bağlamda depremzede insanların göç ettiği düşünülen illerde ise konut satışlarında bu göçü kaldıracak bir değişim gözlenmemiştir. Bunun sebebi ev satın almaktansa belirsizlikten kaynaklanan kira seçeneğinin seçilmesi olabilir."
   },
   {
     "objectID": "proje.html#keşifsel-veri-analizi",

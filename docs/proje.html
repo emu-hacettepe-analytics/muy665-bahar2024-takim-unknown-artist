@@ -166,9 +166,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#analiz" id="toc-analiz" class="nav-link" data-scroll-target="#analiz"><span class="header-section-number">3</span> Analiz</a>
   <ul class="collapse">
   <li><a href="#veri-kaynağı" id="toc-veri-kaynağı" class="nav-link" data-scroll-target="#veri-kaynağı"><span class="header-section-number">3.1</span> Veri Kaynağı</a></li>
-  <li><a href="#veri-hakkında-genel-bilgiler" id="toc-veri-hakkında-genel-bilgiler" class="nav-link" data-scroll-target="#veri-hakkında-genel-bilgiler"><span class="header-section-number">3.2</span> Veri Hakkında Genel Bilgiler</a></li>
-  <li><a href="#tercih-sebebi" id="toc-tercih-sebebi" class="nav-link" data-scroll-target="#tercih-sebebi"><span class="header-section-number">3.3</span> Tercih Sebebi</a></li>
-  <li><a href="#ön-işleme" id="toc-ön-işleme" class="nav-link" data-scroll-target="#ön-işleme"><span class="header-section-number">3.4</span> Ön İşleme</a></li>
+  <li><a href="#tercih-sebebi" id="toc-tercih-sebebi" class="nav-link" data-scroll-target="#tercih-sebebi"><span class="header-section-number">3.2</span> Tercih Sebebi</a></li>
+  <li><a href="#ön-işleme" id="toc-ön-işleme" class="nav-link" data-scroll-target="#ön-işleme"><span class="header-section-number">3.3</span> Ön İşleme</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -204,6 +203,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="proje-genel-bakış-ve-kapsamı" class="level1" data-number="1">
 <h1 data-number="1"><span class="header-section-number">1</span> <strong>1.Proje Genel Bakış ve Kapsamı</strong></h1>
 <p>Projemizde Türkiye’de 2022 ve 2023 yıllarında gerçekleşen toplam konut satışlarının illere göre analizi yapılmıştır.</p>
+<p><a href="https://www.youtube.com/watch?v=2faGNqa3qok" class="uri">https://www.youtube.com/watch?v=2faGNqa3qok</a></p>
 </section>
 <section id="veri" class="level1" data-number="2">
 <h1 data-number="2"><span class="header-section-number">2</span> 2.Veri</h1>
@@ -516,16 +516,12 @@ Attaching package: 'dplyr'</code></pre>
 <p>Projemiz için elde ettiğimiz verinin kaynağı Türkiye İstatistik Kurumu web sitesidir.</p>
 <p>Detay için bkz. <a href="https://biruni.tuik.gov.tr/ilgosterge/?locale=tr">“https://biruni.tuik.gov.tr/ilgosterge/?locale=tr”</a></p>
 </section>
-<section id="veri-hakkında-genel-bilgiler" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="veri-hakkında-genel-bilgiler"><span class="header-section-number">3.2</span> Veri Hakkında Genel Bilgiler</h2>
-<p>xxxxxx</p>
-</section>
-<section id="tercih-sebebi" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="tercih-sebebi"><span class="header-section-number">3.3</span> Tercih Sebebi</h2>
+<section id="tercih-sebebi" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="tercih-sebebi"><span class="header-section-number">3.2</span> Tercih Sebebi</h2>
 <p>Türkiye’deki konut satışlarının illere göre karşılaştırılması ve konut sirkülasyonunun net bir şekilde analiz edilebilmesine olanak tanınması, bu veri setinin tercih edilmesinde büyük önem taşımaktadır. Ayrıca 6 Şubat 2023 yılında gerçekleşen deprem felaketinin ardından zarar gören 11 ildeki konut satışlarının ne derece etkilendiğini görebilmek adına veri seti ilgi çekici bulunmuştur.</p>
 </section>
-<section id="ön-işleme" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="ön-işleme"><span class="header-section-number">3.4</span> Ön İşleme</h2>
+<section id="ön-işleme" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="ön-işleme"><span class="header-section-number">3.3</span> Ön İşleme</h2>
 <p>R studio’nun dış kaynaktan .xlsx veya .csv formatında verileri okuyabilmesi için ilk etapta “readxl” paketi yüklenmiştir. Web sitesinden indirilen excel formatındaki ham veri R studio’nun okuyamayacağı türden tablolar içermektedir. Ayrıca R studio’nun okuyamadığı Türkçe karakterler ve sayı formatları yeniden işlenmiş ve yeni bir dosya olarak kaydedildikten sonra okutulmuştur.</p>
 <p><strong>Sonuçlar</strong></p>
 <p>Yapılan analiz çalışmasına göre Türkiye genelinde pandemi veya ekonomik nedenlerden olabilecek şekilde 2023 yılında 2022 yılına göre konut satışlarında bir düşüş yaşandığı belirlenmiştir.</p>
