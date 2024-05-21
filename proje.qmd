@@ -7,7 +7,7 @@ number-sections: true
 
 Türkiye İllerinde 2022-2023 yıllarında gerçekleşen konut satışları analizi
 
-![](images/111.jpg)
+![](images/3333333333.jpg){width="571"}
 
 # **Proje Genel Bakış ve Kapsamı**
 
