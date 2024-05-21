@@ -710,14 +710,14 @@
     "objectID": "proje.html#veri-seti-önizleme",
     "href": "proje.html#veri-seti-önizleme",
     "title": "Proje Unknown Artist",
-    "section": "2.1 2.1 Veri Seti Önizleme",
-    "text": "2.1 2.1 Veri Seti Önizleme\n\nstr(veri)\n\ntibble [81 × 3] (S3: tbl_df/tbl/data.frame)\n $ SEHIR: chr [1:81] \"ADANA\" \"ADIYAMAN\" \"AFYONKARAHISAR\" \"AGRI\" ...\n $ 2022 : num [1:81] 26908 8198 11024 3102 5339 ...\n $ 2023 : num [1:81] 16925 3725 7717 2208 4075 ...\n\nhead(veri)\n\n# A tibble: 6 × 3\n  SEHIR          `2022` `2023`\n  &lt;chr&gt;           &lt;dbl&gt;  &lt;dbl&gt;\n1 ADANA           26908  16925\n2 ADIYAMAN         8198   3725\n3 AFYONKARAHISAR  11024   7717\n4 AGRI             3102   2208\n5 AMASYA           5339   4075\n6 ANKARA         126166  94724"
+    "section": "2.1 Veri Seti Önizleme",
+    "text": "2.1 Veri Seti Önizleme\n\nstr(veri)\n\ntibble [81 × 3] (S3: tbl_df/tbl/data.frame)\n $ SEHIR: chr [1:81] \"ADANA\" \"ADIYAMAN\" \"AFYONKARAHISAR\" \"AGRI\" ...\n $ 2022 : num [1:81] 26908 8198 11024 3102 5339 ...\n $ 2023 : num [1:81] 16925 3725 7717 2208 4075 ...\n\nhead(veri)\n\n# A tibble: 6 × 3\n  SEHIR          `2022` `2023`\n  &lt;chr&gt;           &lt;dbl&gt;  &lt;dbl&gt;\n1 ADANA           26908  16925\n2 ADIYAMAN         8198   3725\n3 AFYONKARAHISAR  11024   7717\n4 AGRI             3102   2208\n5 AMASYA           5339   4075\n6 ANKARA         126166  94724"
   },
   {
     "objectID": "proje.html#eksik-veri-kontrolü",
     "href": "proje.html#eksik-veri-kontrolü",
     "title": "Proje Unknown Artist",
-    "section": "2.2 2.2 Eksik Veri Kontrolü",
-    "text": "2.2 2.2 Eksik Veri Kontrolü\n\nsum(is.na(veri))\n\n[1] 0\n\n\n\nsummary(veri)\n\n    SEHIR                2022             2023       \n Length:81          Min.   :   468   Min.   :   290  \n Class :character   1st Qu.:  4044   1st Qu.:  2568  \n Mode  :character   Median :  8177   Median :  5556  \n                    Mean   : 18341   Mean   : 12270  \n                    3rd Qu.: 21789   3rd Qu.: 14506  \n                    Max.   :259654   Max.   :159838  \n\n\n\ncolnames(veri)\n\n[1] \"SEHIR\" \"2022\"  \"2023\""
+    "section": "2.2 Eksik Veri Kontrolü",
+    "text": "2.2 Eksik Veri Kontrolü\n\nsum(is.na(veri))\n\n[1] 0\n\n\n\nsummary(veri)\n\n    SEHIR                2022             2023       \n Length:81          Min.   :   468   Min.   :   290  \n Class :character   1st Qu.:  4044   1st Qu.:  2568  \n Mode  :character   Median :  8177   Median :  5556  \n                    Mean   : 18341   Mean   : 12270  \n                    3rd Qu.: 21789   3rd Qu.: 14506  \n                    Max.   :259654   Max.   :159838  \n\n\n\ncolnames(veri)\n\n[1] \"SEHIR\" \"2022\"  \"2023\""
   }
 ]

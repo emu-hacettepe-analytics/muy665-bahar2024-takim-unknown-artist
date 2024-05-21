@@ -7,13 +7,13 @@ number-sections: true
 
 Türkiye İllerinde 2022-2023 yıllarında gerçekleşen konut satışları analizi
 
-# **1.Proje Genel Bakış ve Kapsamı**
+# **Proje Genel Bakış ve Kapsamı**
 
 Projemizde Türkiye’de 2022 ve 2023 yıllarında gerçekleşen toplam konut satışlarının illere göre analizi yapılmıştır.
 
 <https://www.youtube.com/watch?v=2faGNqa3qok>
 
-# 2.Veri
+# Veri
 
 ```{r}
 library(readxl)
@@ -22,7 +22,7 @@ print(veri)
 
 ```
 
-## 2.1 Veri Seti Önizleme
+##  Veri Seti Önizleme
 
 ```{r}
 str(veri)
@@ -30,7 +30,7 @@ head(veri)
 
 ```
 
-## **2.2 Eksik Veri Kontrolü**
+##  **Eksik Veri Kontrolü**
 
 ```{r}
 sum(is.na(veri))
